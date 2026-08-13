@@ -35,7 +35,7 @@ export default function WordForm({ initialWord, onSave, onCancel }) {
 
       <label>
         단어
-        <input autoFocus value={form.word} onChange={(e) => update('word', e.target.value)} placeholder="przepis" required />
+        <input value={form.word} onChange={(e) => update('word', e.target.value)} placeholder="przepis" required />
       </label>
       <label>
         뜻

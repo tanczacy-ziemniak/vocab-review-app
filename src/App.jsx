@@ -9,6 +9,14 @@ import ImportBox from './components/ImportBox'
 const LOCAL_WORDS = 'reword.words.v1'
 const LOCAL_REVIEWS = 'reword.reviews.v1'
 
+const REVIEW_MODES = [
+  ['mixed', '혼합'],
+  ['forward', '폴 → 한'],
+  ['reverse', '한 → 폴'],
+  ['cloze', '빈칸'],
+  ['listening', '듣기'],
+]
+
 const readLocal = (key) => {
   try { return JSON.parse(localStorage.getItem(key) || '[]') } catch { return [] }
 }
@@ -26,6 +34,7 @@ function App() {
   const [editing, setEditing] = useState(null)
   const [toast, setToast] = useState('')
   const [dark, setDark] = useState(() => localStorage.getItem('reword.theme') === 'dark')
+  const [reviewMode, setReviewMode] = useState(() => localStorage.getItem('reword.reviewMode') || 'mixed')
   const [reviewOffset, setReviewOffset] = useState(0)
 
   const notify = (message) => {
@@ -33,10 +42,19 @@ function App() {
     window.setTimeout(() => setToast(''), 2400)
   }
 
+  const goToTab = (nextTab) => {
+    if (document.activeElement instanceof HTMLElement) document.activeElement.blur()
+    setTab(nextTab)
+  }
+
   useEffect(() => {
     document.documentElement.dataset.theme = dark ? 'dark' : 'light'
     localStorage.setItem('reword.theme', dark ? 'dark' : 'light')
   }, [dark])
+
+  useEffect(() => {
+    localStorage.setItem('reword.reviewMode', reviewMode)
+  }, [reviewMode])
 
   useEffect(() => {
     if (!isSupabaseConfigured) {
@@ -79,12 +97,6 @@ function App() {
   const signIn = async (email, password) => {
     const { error } = await supabase.auth.signInWithPassword({ email, password })
     if (error) notify(error.message)
-  }
-
-  const signUp = async (email, password) => {
-    const { error } = await supabase.auth.signUp({ email, password })
-    if (error) notify(error.message)
-    else notify('가입 완료. 이메일 인증 설정에 따라 확인 메일이 올 수 있어요.')
   }
 
   const saveWord = async (form) => {
@@ -193,7 +205,7 @@ function App() {
   const mastery = words.length ? Math.round((learned / words.length) * 100) : 0
 
   if (loading) return <div className="splash">Reword</div>
-  if (isSupabaseConfigured && !session) return <AuthScreen onSignIn={signIn} onSignUp={signUp} />
+  if (isSupabaseConfigured && !session) return <AuthScreen onSignIn={signIn} />
 
   return (
     <div className="app-shell">
@@ -204,10 +216,10 @@ function App() {
           <div><h1>Reword</h1><p>{isSupabaseConfigured ? 'Cloud sync' : 'Local mode'}</p></div>
         </div>
         <nav>
-          <button className={tab === 'today' ? 'active' : ''} onClick={() => setTab('today')}><span>◉</span> Today <b>{dueWords.length}</b></button>
-          <button className={tab === 'words' ? 'active' : ''} onClick={() => setTab('words')}><span>▤</span> 단어장</button>
-          <button className={tab === 'add' ? 'active' : ''} onClick={() => { setEditing(null); setTab('add') }}><span>＋</span> 단어 추가</button>
-          <button className={tab === 'import' ? 'active' : ''} onClick={() => setTab('import')}><span>⇩</span> 가져오기</button>
+          <button className={tab === 'today' ? 'active' : ''} onClick={() => goToTab('today')}><span>◉</span> Today <b>{dueWords.length}</b></button>
+          <button className={tab === 'words' ? 'active' : ''} onClick={() => goToTab('words')}><span>▤</span> 단어장</button>
+          <button className={tab === 'add' ? 'active' : ''} onClick={() => { setEditing(null); goToTab('add') }}><span>＋</span> 단어 추가</button>
+          <button className={tab === 'import' ? 'active' : ''} onClick={() => goToTab('import')}><span>⇩</span> 가져오기</button>
         </nav>
         <div className="sidebar-bottom">
           <button className="settings-btn" onClick={() => setDark((v) => !v)}>{dark ? '☀︎ 라이트 모드' : '◐ 다크 모드'}</button>
@@ -233,7 +245,21 @@ function App() {
               <article><span>연속 학습</span><strong>{streak}</strong><small>일</small></article>
               <article><span>기억 안정화</span><strong>{mastery}%</strong><small>{learned}/{words.length}</small></article>
             </section>
-            <ReviewCard word={reviewWord} position={dueWords.length ? 1 : 0} total={dueWords.length} onGrade={gradeWord} />
+            <section className="review-mode-bar" aria-label="복습 방식">
+              <span>복습 방식</span>
+              <div className="review-mode-buttons">
+                {REVIEW_MODES.map(([value, label]) => (
+                  <button key={value} className={reviewMode === value ? 'active' : ''} onClick={() => setReviewMode(value)}>{label}</button>
+                ))}
+              </div>
+            </section>
+            <ReviewCard
+              word={reviewWord}
+              position={dueWords.length ? todayReviews.length + 1 : todayReviews.length}
+              total={todayReviews.length + dueWords.length}
+              onGrade={gradeWord}
+              selectedMode={reviewMode}
+            />
           </div>
         )}
 
@@ -251,7 +277,7 @@ function App() {
                   <article className="word-row" key={w.id}>
                     <div><strong>{w.word}</strong><span>{w.meaning}</span><div className="chips">{(w.tags || []).map((t) => <em key={t}>{t}</em>)}</div></div>
                     <div className="word-meta"><span>{isDue(w) ? '오늘' : new Intl.DateTimeFormat('ko-KR', { month: 'short', day: 'numeric' }).format(new Date(w.next_review_at))}</span><small>{w.review_count || 0}회 복습</small></div>
-                    <div className="row-actions"><button onClick={() => { setEditing(w); setTab('add') }}>수정</button><button onClick={() => deleteWord(w)}>삭제</button></div>
+                    <div className="row-actions"><button onClick={() => { setEditing(w); goToTab('add') }}>수정</button><button onClick={() => deleteWord(w)}>삭제</button></div>
                   </article>
                 ))}
               </div>
@@ -259,14 +285,14 @@ function App() {
           </div>
         )}
 
-        {tab === 'add' && <WordForm initialWord={editing} onSave={saveWord} onCancel={editing ? () => { setEditing(null); setTab('words') } : null} />}
+        {tab === 'add' && <WordForm initialWord={editing} onSave={saveWord} onCancel={editing ? () => { setEditing(null); goToTab('words') } : null} />}
         {tab === 'import' && <ImportBox onImport={importWords} />}
 
         <nav className="bottom-nav">
-          <button className={tab === 'today' ? 'active' : ''} onClick={() => setTab('today')}><span>◉</span><small>Today</small></button>
-          <button className={tab === 'words' ? 'active' : ''} onClick={() => setTab('words')}><span>▤</span><small>단어장</small></button>
-          <button className={tab === 'add' ? 'active' : ''} onClick={() => { setEditing(null); setTab('add') }}><span>＋</span><small>추가</small></button>
-          <button className={tab === 'import' ? 'active' : ''} onClick={() => setTab('import')}><span>⇩</span><small>가져오기</small></button>
+          <button className={tab === 'today' ? 'active' : ''} onClick={() => goToTab('today')}><span>◉</span><small>Today</small></button>
+          <button className={tab === 'words' ? 'active' : ''} onClick={() => goToTab('words')}><span>▤</span><small>단어장</small></button>
+          <button className={tab === 'add' ? 'active' : ''} onClick={() => { setEditing(null); goToTab('add') }}><span>＋</span><small>추가</small></button>
+          <button className={tab === 'import' ? 'active' : ''} onClick={() => goToTab('import')}><span>⇩</span><small>가져오기</small></button>
         </nav>
       </main>
     </div>

@@ -79,3 +79,11 @@ VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
 - AI 기반 뜻/예문/활용 자동 생성
 - PWA 설치 및 오프라인 캐시
 - 학습 목표(하루 20개 등)
+
+## V2 changes
+
+- Fixed iPhone/Safari focus zoom by keeping form controls at 16px+, removing automatic input focus, and blurring focused controls during tab navigation.
+- Added review modes: Mixed, Polish→Korean, Korean→Polish, cloze, and listening.
+- Listening mode uses the browser Speech Synthesis API with `pl-PL` pronunciation.
+- Login UI is now sign-in only for a private single-user deployment. **Also disable new sign-ups in Supabase Auth settings**; hiding the button alone is not an access-control measure.
+- No database migration is required from V1 to V2.

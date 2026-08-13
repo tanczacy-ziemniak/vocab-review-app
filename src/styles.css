@@ -28,8 +28,8 @@
 
 * { box-sizing: border-box; }
 body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--bg); color: var(--text); }
-button, input, textarea, select { font: inherit; }
-button { cursor: pointer; }
+button { font: inherit; cursor: pointer; touch-action: manipulation; }
+input, textarea, select { font-family: inherit; font-size: 16px; line-height: 1.35; }
 input, textarea, select { width: 100%; border: 1px solid var(--border); background: var(--panel); color: var(--text); border-radius: 14px; padding: 13px 14px; outline: none; transition: .2s ease; }
 input:focus, textarea:focus, select:focus { border-color: var(--text); box-shadow: 0 0 0 3px color-mix(in srgb, var(--text) 8%, transparent); }
 textarea { resize: vertical; }
@@ -66,6 +66,19 @@ code { background: var(--soft); border-radius: 6px; padding: 2px 5px; }
 .stats-grid small { color: var(--muted); }
 
 .review-card { min-height: 440px; padding: 24px; display: flex; flex-direction: column; }
+.review-mode-bar { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.review-mode-bar > span { color: var(--muted); font-size: 12px; font-weight: 750; white-space: nowrap; }
+.review-mode-buttons { display: flex; gap: 7px; flex-wrap: wrap; justify-content: flex-end; }
+.review-mode-buttons button { border: 1px solid var(--border); background: var(--panel); color: var(--muted); border-radius: 999px; padding: 8px 11px; font-size: 12px; font-weight: 750; }
+.review-mode-buttons button.active { background: var(--accent); color: var(--accentText); border-color: var(--accent); }
+.prompt-area { flex: 1; min-height: 260px; display: grid; place-items: center; text-align: center; }
+.review-word-meaning { font-size: clamp(32px, 5vw, 58px); line-height: 1.1; }
+.cloze-prompt { max-width: 720px; padding: 38px 18px 24px; font-size: clamp(25px, 4vw, 42px); font-weight: 760; line-height: 1.45; letter-spacing: -.035em; }
+.listening-prompt { display: grid; justify-items: center; gap: 10px; color: var(--muted); }
+.listening-prompt strong { color: var(--text); font-size: 21px; }
+.listening-prompt span { font-size: 13px; }
+.speaker-btn { width: 82px; height: 82px; border: 1px solid var(--border); border-radius: 50%; background: var(--soft); color: var(--text); font-size: 32px; margin-bottom: 8px; }
+.answer-word { font-size: clamp(34px, 5vw, 56px); font-weight: 850; letter-spacing: -.055em; margin-bottom: 8px; }
 .review-topline { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; }
 .progress { height: 4px; background: var(--soft); border-radius: 999px; margin-top: 13px; overflow: hidden; }
 .progress span { display: block; height: 100%; background: var(--text); border-radius: inherit; transition: width .3s ease; }
@@ -117,6 +130,7 @@ code { background: var(--soft); border-radius: 6px; padding: 2px 5px; }
 .auth-card { width: min(430px, 100%); background: var(--panel); border: 1px solid var(--border); border-radius: 26px; padding: 28px; box-shadow: var(--shadow); }
 .auth-form { display: grid; gap: 15px; margin-top: 32px; }
 .auth-card > .text-btn { width: 100%; margin-top: 14px; padding: 10px; }
+.auth-private-note { margin: 16px 0 0; color: var(--muted); font-size: 12px; text-align: center; }
 .splash { min-height: 100vh; display: grid; place-items: center; font-size: 28px; font-weight: 900; }
 .toast { position: fixed; z-index: 50; top: 18px; right: 18px; background: var(--text); color: var(--bg); border-radius: 12px; padding: 12px 15px; box-shadow: var(--shadow); font-size: 13px; }
 .mobile-header, .bottom-nav { display: none; }
@@ -128,6 +142,11 @@ code { background: var(--soft); border-radius: 6px; padding: 2px 5px; }
   .mobile-header { display: flex; align-items: center; justify-content: space-between; margin: 0 auto 28px; max-width: 980px; }
   .mobile-header button { border: 0; background: var(--panel); color: var(--text); width: 36px; height: 36px; border-radius: 10px; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
+  .review-mode-bar { display: block; overflow: hidden; }
+  .review-mode-bar > span { display: block; margin-bottom: 9px; }
+  .review-mode-buttons { flex-wrap: nowrap; justify-content: flex-start; overflow-x: auto; padding-bottom: 3px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .review-mode-buttons::-webkit-scrollbar { display: none; }
+  .review-mode-buttons button { flex: 0 0 auto; min-height: 38px; }
   .bottom-nav { position: fixed; display: grid; grid-template-columns: repeat(4, 1fr); left: 12px; right: 12px; bottom: 12px; z-index: 20; border: 1px solid var(--border); border-radius: 18px; background: color-mix(in srgb, var(--panel) 92%, transparent); backdrop-filter: blur(12px); padding: 7px; box-shadow: 0 10px 34px rgba(0,0,0,.12); }
   .bottom-nav button { border: 0; background: transparent; color: var(--muted); border-radius: 12px; padding: 7px 4px; display: grid; place-items: center; gap: 2px; }
   .bottom-nav button.active { background: var(--soft); color: var(--text); }
@@ -144,6 +163,10 @@ code { background: var(--soft); border-radius: 6px; padding: 2px 5px; }
   .stats-grid article { padding: 14px; min-height: 98px; }
   .stats-grid strong { font-size: 25px; }
   .review-card { min-height: 430px; padding: 18px; border-radius: 20px; }
+  .prompt-area { min-height: 245px; }
+  .cloze-prompt { padding-inline: 8px; font-size: 27px; }
+  .listening-prompt strong { font-size: 18px; }
+  .speaker-btn { width: 74px; height: 74px; }
   .review-word { font-size: 48px; }
   .grade-grid { grid-template-columns: 1fr 1fr; }
   .form-grid { grid-template-columns: 1fr; padding: 20px; }
