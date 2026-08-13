@@ -1,3 +1,14 @@
+# Reword V3.1 — Polish Core 3000 (한국어 뜻 개선판)
+
+이 빌드는 V3 Core 3000 기능에 개선된 한국어 뜻 데이터 3,000개를 앱 내부에 직접 포함한 버전입니다.
+
+- 3,000개 고유 폴란드어 표제어
+- 개선된 한국어 뜻 내장
+- Core 3000 전용 화면
+- 하루 새 단어 5 / 10 / 15 / 20개 선택
+- 기존 단어 자동 중복 제외
+- 기존 Supabase 스키마와 호환
+
 # Reword
 
 Netlify에 바로 올릴 수 있는 개인 단어 복습 웹앱입니다.
@@ -87,3 +98,13 @@ VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
 - Listening mode uses the browser Speech Synthesis API with `pl-PL` pronunciation.
 - Login UI is now sign-in only for a private single-user deployment. **Also disable new sign-ups in Supabase Auth settings**; hiding the button alone is not an access-control measure.
 - No database migration is required from V1 to V2.
+
+## V3 · Polish Core 3000
+
+- `Core 3000` 메뉴에서 빈도 기반 Polish Core 3000을 한 번에 설치할 수 있습니다.
+- 설치 전에 하루 새 단어 수를 `5 / 10 / 15 / 20` 중 선택합니다.
+- 3,000개를 모두 즉시 due로 만들지 않고, 선택한 속도에 맞춰 `next_review_at`을 앞으로 분산합니다.
+- 이미 단어장에 동일한 폴란드어 표제어가 있으면 자동으로 건너뜁니다.
+- 설치가 중간에 끊겨도 다시 누르면 남은 단어만 설치합니다.
+- 기존 V2 Supabase 스키마를 그대로 사용하므로 `schema.sql`을 다시 실행할 필요가 없습니다.
+- 데이터 출처 및 한국어 뜻 생성 방식은 `DATA_SOURCES.md`를 참고하세요.

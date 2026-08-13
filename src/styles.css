@@ -176,3 +176,65 @@ code { background: var(--soft); border-radius: 6px; padding: 2px 5px; }
   .word-meta { text-align: right; }
   .row-actions { grid-column: 1 / -1; justify-content: flex-start; }
 }
+
+/* V3 · Polish Core 3000 */
+.core-overview { padding: 28px; }
+.core-title-row { display: flex; justify-content: space-between; gap: 28px; align-items: flex-start; }
+.core-title-row h3 { margin: 5px 0 8px; font-size: clamp(24px, 3vw, 34px); letter-spacing: -.045em; }
+.core-title-row p { max-width: 650px; margin: 0; color: var(--muted); line-height: 1.6; }
+.core-kicker { font-size: 10px; letter-spacing: .14em; font-weight: 850; color: var(--muted); }
+.core-ring { flex: 0 0 84px; width: 84px; height: 84px; border: 1px solid var(--border); border-radius: 50%; display: grid; place-items: center; align-content: center; background: var(--soft); }
+.core-ring strong { font-size: 20px; }
+.core-ring span { margin-top: 1px; color: var(--muted); font-size: 10px; }
+.core-progress-line { height: 7px; border-radius: 999px; overflow: hidden; background: var(--soft); margin: 26px 0 20px; }
+.core-progress-line span { height: 100%; display: block; background: var(--text); border-radius: inherit; transition: width .35s ease; }
+.core-stats { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; }
+.core-stats > div { min-height: 100px; padding: 17px; display: flex; flex-direction: column; border-right: 1px solid var(--border); }
+.core-stats > div:last-child { border-right: 0; }
+.core-stats span, .core-stats small { color: var(--muted); font-size: 11px; }
+.core-stats strong { margin-top: auto; font-size: 27px; letter-spacing: -.04em; }
+.core-install-area { margin-top: 26px; padding-top: 25px; border-top: 1px solid var(--border); }
+.core-speed-heading { display: flex; align-items: end; justify-content: space-between; gap: 12px; }
+.core-speed-heading > div { display: grid; gap: 3px; }
+.core-speed-heading strong { font-size: 15px; }
+.core-speed-heading span { color: var(--muted); font-size: 12px; }
+.core-speed-heading b { font-size: 22px; }
+.speed-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 14px; }
+.speed-buttons button { min-height: 48px; border: 1px solid var(--border); border-radius: 13px; background: var(--panel); color: var(--text); font-weight: 800; }
+.speed-buttons button.active { background: var(--accent); color: var(--accentText); border-color: var(--accent); }
+.speed-buttons button:disabled, .core-install-btn:disabled { opacity: .55; cursor: default; }
+.core-estimate { display: flex; justify-content: space-between; gap: 14px; color: var(--muted); font-size: 11px; padding: 10px 2px 0; }
+.install-progress { display: grid; gap: 7px; margin-top: 18px; }
+.install-progress > div { height: 6px; overflow: hidden; border-radius: 999px; background: var(--soft); }
+.install-progress > div span { height: 100%; display: block; background: var(--text); transition: width .2s ease; }
+.install-progress small { color: var(--muted); }
+.core-install-btn { width: 100%; margin-top: 18px; min-height: 52px; }
+.core-footnote { margin: 11px 2px 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.core-preview-panel { overflow: hidden; }
+.core-preview-heading { padding: 22px 22px 16px; border-bottom: 1px solid var(--border); }
+.core-preview-heading > span { color: var(--muted); font-size: 11px; }
+.core-preview-list { display: grid; }
+.core-preview-row { display: grid; grid-template-columns: 44px minmax(130px, .7fr) 1.3fr; align-items: center; gap: 12px; min-height: 56px; padding: 10px 22px; border-bottom: 1px solid var(--border); }
+.core-preview-row:last-child { border-bottom: 0; }
+.core-preview-row > b { color: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.core-preview-row > strong { font-size: 16px; }
+.core-preview-row > span { color: var(--muted); font-size: 13px; }
+.nav-3000 { font-size: 11px !important; font-weight: 900; letter-spacing: -.03em; }
+
+@media (max-width: 900px) {
+  .bottom-nav { grid-template-columns: repeat(5, 1fr); }
+}
+
+@media (max-width: 620px) {
+  .core-overview { padding: 20px; }
+  .core-title-row { gap: 16px; }
+  .core-ring { width: 70px; height: 70px; flex-basis: 70px; }
+  .core-ring strong { font-size: 17px; }
+  .core-stats { grid-template-columns: 1fr 1fr 1fr; }
+  .core-stats > div { min-height: 88px; padding: 12px 10px; }
+  .core-stats strong { font-size: 22px; }
+  .core-preview-row { grid-template-columns: 30px minmax(90px, .7fr) 1.3fr; gap: 8px; padding: 10px 14px; }
+  .core-preview-row > span { font-size: 12px; }
+  .bottom-nav { left: 8px; right: 8px; bottom: 8px; padding: 6px; gap: 1px; }
+  .bottom-nav button { padding-inline: 2px; }
+}
