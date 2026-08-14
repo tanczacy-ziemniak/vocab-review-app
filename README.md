@@ -1,89 +1,127 @@
-# Reword
+# Reword V3.3 — Four-Way Quiz + Flag Corrections
 
-Netlify에 바로 올릴 수 있는 개인 단어 복습 웹앱입니다.
+개인용 폴란드어 단어 복습 앱입니다. React + Vite + Supabase + Netlify 구성입니다.
 
-## 포함 기능
+## V3.3 핵심 변경
 
-- 이메일/비밀번호 로그인 (Supabase 설정 시)
-- 단어 추가 / 수정 / 삭제
-- 태그와 검색
-- 오늘 복습할 단어 자동 선별
-- `몰라요 / 어려움 / 알아요 / 쉬움` 4단계 spaced repetition
-- 복습 기록 / streak / 기억 안정화 지표
-- 여러 단어 붙여넣기 import
-- 반응형 모바일 UI
-- 다크모드
-- Supabase가 없을 때 localStorage 기반 Local Mode
+한 단어마다 아래 4개 문제를 랜덤 순서로 모두 풉니다.
 
-## 1. 로컬 실행
+1. **듣기** — `pl-PL` TTS를 듣고 비슷한 폴란드어 3개와 함께 4지선다
+2. **폴 → 한** — 폴란드어를 보고 한국어 뜻 4지선다
+3. **한 → 폴** — 한국어 뜻을 보고 폴란드어 직접 입력
+4. **빈칸** — **한국어 예문을 먼저 보고**, 폴란드어 예문의 빈칸을 직접 입력
+
+점수에 따른 복습 간격은 기존 V3.2와 같습니다.
+
+- 4/4 → easy
+- 3/4 → good
+- 2/4 → hard
+- 0~1/4 → again
+
+## ⚑ Flag & Correct
+
+문제를 푼 뒤 결과 영역의 **⚑ 버튼**을 누르면 해당 단어의 정답 데이터를 즉시 수정할 수 있습니다.
+
+수정 가능한 항목:
+
+- 폴란드어 기본 정답
+- 한국어 뜻
+- 폴란드어 예문
+- 한국어 예문
+- 추가로 인정할 폴란드어 정답(한 줄에 하나)
+- 추가로 인정할 한국어 뜻(한 줄에 하나)
+
+오답으로 판정됐지만 실제로는 맞는 답이었다면 **“이번 답도 정답으로 인정하고 현재 문제 점수를 복구”**를 체크하고 저장하세요.
+
+- 한→폴 / 빈칸 / 듣기: 현재 답을 `accepted_answers`에 추가
+- 폴→한: 현재 선택을 `accepted_meanings`에 추가
+- 현재 문제의 오답 점수도 즉시 정답으로 복구
+- 이후 복습에서는 추가 정답도 자동으로 정답 처리
+
+따라서 동의어, 여러 가능한 번역, 활용형 등으로 인해 정답이 둘 이상인 경우도 처리할 수 있습니다.
+
+## Core 3000 한국어 예문
+
+Core 3000 데이터에는 다음 필드가 포함됩니다.
+
+```text
+word
+meaning
+example
+example_ko
+accepted_answers
+accepted_meanings
+```
+
+3,000개 모두 `example_ko`가 있으며, 3,000개 폴란드어 예문 모두 표제어를 포함하도록 검사했습니다.
+
+상위 고빈도 단어 일부 예문은 별도로 다듬었고, 긴 꼬리 어휘는 품사 기반 생성 예문/한국어 힌트를 사용합니다. 자동 생성 문장이 부자연스럽거나 의미가 애매하면 복습 중 ⚑로 바로 수정할 수 있습니다.
+
+## 기존 Supabase를 쓰고 있다면 — 이 SQL을 먼저 1회 실행
+
+V3.2 이하에서 이미 `words` 테이블을 만들었다면 배포 전에 Supabase **SQL Editor**에서 아래 파일을 실행하세요.
+
+```text
+supabase/migrations/v3_3_quiz_corrections.sql
+```
+
+내용은 새 컬럼 3개만 추가합니다.
+
+```sql
+alter table public.words
+  add column if not exists example_ko text not null default '',
+  add column if not exists accepted_answers text[] not null default '{}',
+  add column if not exists accepted_meanings text[] not null default '{}';
+```
+
+기존 단어와 리뷰 기록은 삭제되거나 초기화되지 않습니다.
+
+처음부터 새 Supabase 프로젝트를 만드는 경우에는 업데이트된 `supabase/schema.sql`만 실행하면 됩니다.
+
+## Core 3000 설치
+
+아직 Core 3000을 넣지 않았다면 가장 간단합니다.
+
+1. 위 migration 실행
+2. V3.3 배포
+3. 로그인
+4. `Core 3000` 메뉴
+5. 하루 새 단어 5 / 10 / 15 / 20 선택
+6. `Core 3000 추가`
+
+CSV import는 필요하지 않습니다. `example_ko`와 복수 정답 필드까지 앱이 Supabase `words` 테이블에 자동 저장합니다.
+
+## 환경변수
+
+```env
+VITE_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+VITE_SUPABASE_ANON_KEY=YOUR_PUBLISHABLE_KEY
+```
+
+## 로컬 실행
 
 ```bash
 npm install
 npm run dev
 ```
 
-Supabase 환경변수가 없으면 Local Mode로 바로 실행됩니다. 데이터는 현재 브라우저의 localStorage에만 저장됩니다.
+## Netlify 업데이트
 
-## 2. Supabase 연결
+기존 GitHub repository 파일을 이 버전으로 교체한 뒤:
 
-1. Supabase에서 새 프로젝트를 만듭니다.
-2. `supabase/schema.sql` 전체를 SQL Editor에서 실행합니다.
-3. `.env.example`을 `.env`로 복사합니다.
-4. Supabase Project Settings > API의 Project URL과 anon/public key를 넣습니다.
-
-```env
-VITE_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
-VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+```bash
+git add .
+git commit -m "Upgrade Reword to V3.3 flag corrections"
+git push
 ```
 
-5. 다시 `npm run dev`를 실행합니다.
+기존 Netlify 사이트가 자동 재배포됩니다.
 
-가입 후 이메일 인증을 원하지 않으면 Supabase Authentication 설정에서 Email confirmation을 조정할 수 있습니다.
+## 모바일
 
-## 3. Netlify 배포
+기존 iPhone/Safari 자동 줌 수정도 유지합니다.
 
-### GitHub를 사용할 때
-
-1. 이 폴더를 GitHub repository에 push합니다.
-2. Netlify > Add new site > Import an existing project에서 repository를 선택합니다.
-3. Build command: `npm run build`
-4. Publish directory: `dist`
-5. Site configuration > Environment variables에 아래 2개를 추가합니다.
-   - `VITE_SUPABASE_URL`
-   - `VITE_SUPABASE_ANON_KEY`
-6. Deploy합니다.
-
-`netlify.toml`이 포함되어 있으므로 일반적인 SPA 배포 설정은 자동으로 잡힙니다.
-
-### Supabase 없이 먼저 테스트
-
-환경변수를 넣지 않고 배포하면 Local Mode로 동작합니다. 로그인 없이 바로 단어를 저장해 볼 수 있지만, 기기 간 동기화는 되지 않습니다.
-
-## 4. 현재 복습 알고리즘
-
-가벼운 MVP용 spaced repetition입니다.
-
-- 몰라요: 1일 후, 학습 단계 초기화
-- 어려움: 기존 interval × 약 1.4
-- 알아요: 1일 → 3일 → 이후 × 약 2.2
-- 쉬움: 3일 → 7일 → 이후 × 약 3.2
-
-나중에 FSRS로 교체하기 쉽도록 `src/lib/review.js`에 로직을 분리했습니다.
-
-## 5. 다음 추천 확장
-
-- FSRS 알고리즘
-- TTS 발음 듣기
-- 빈칸 문제 / 한국어→외국어 / 외국어→한국어 랜덤 출제
-- CSV 파일 업로드
-- AI 기반 뜻/예문/활용 자동 생성
-- PWA 설치 및 오프라인 캐시
-- 학습 목표(하루 20개 등)
-
-## V2 changes
-
-- Fixed iPhone/Safari focus zoom by keeping form controls at 16px+, removing automatic input focus, and blurring focused controls during tab navigation.
-- Added review modes: Mixed, Polish→Korean, Korean→Polish, cloze, and listening.
-- Listening mode uses the browser Speech Synthesis API with `pl-PL` pronunciation.
-- Login UI is now sign-in only for a private single-user deployment. **Also disable new sign-ups in Supabase Auth settings**; hiding the button alone is not an access-control measure.
-- No database migration is required from V1 to V2.
+- form control 16px 이상
+- 자동 focus 없음
+- 메뉴 이동 시 활성 input blur
+- pinch zoom은 차단하지 않음

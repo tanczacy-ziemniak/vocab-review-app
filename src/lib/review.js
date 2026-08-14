@@ -1,5 +1,5 @@
 export const REVIEW_GRADES = {
-  again: { label: '몰라요', score: 0 },
+  again: { label: '다시', score: 0 },
   hard: { label: '어려움', score: 1 },
   good: { label: '알아요', score: 2 },
   easy: { label: '쉬움', score: 3 },
@@ -12,28 +12,33 @@ const addDays = (date, days) => {
   return next.toISOString()
 }
 
+export function gradeFromQuizScore(correctCount) {
+  if (correctCount >= 4) return 'easy'
+  if (correctCount === 3) return 'good'
+  if (correctCount === 2) return 'hard'
+  return 'again'
+}
+
 export function nextSchedule(word, grade) {
   const now = new Date()
   const repetitions = Number(word.repetitions || 0)
   const currentInterval = Math.max(0, Number(word.interval_days || 0))
-  let interval = currentInterval
+  let interval = 1
   let nextRepetitions = repetitions
 
+  // Intervals are strictly ordered: again < hard < good < easy.
+  // The quiz maps 0-1/4, 2/4, 3/4, 4/4 to those four grades.
   if (grade === 'again') {
     interval = 1
     nextRepetitions = 0
   } else if (grade === 'hard') {
     interval = currentInterval <= 1 ? 2 : Math.max(2, Math.round(currentInterval * 1.4))
-    nextRepetitions = repetitions + 1
+    nextRepetitions = repetitions
   } else if (grade === 'good') {
-    if (repetitions === 0) interval = 1
-    else if (repetitions === 1) interval = 3
-    else interval = Math.max(4, Math.round(currentInterval * 2.2))
+    interval = currentInterval <= 1 ? 4 : Math.max(4, Math.round(currentInterval * 2.2))
     nextRepetitions = repetitions + 1
   } else {
-    if (repetitions === 0) interval = 3
-    else if (repetitions === 1) interval = 7
-    else interval = Math.max(8, Math.round(currentInterval * 3.2))
+    interval = currentInterval <= 1 ? 7 : Math.max(7, Math.round(currentInterval * 3.2))
     nextRepetitions = repetitions + 1
   }
 

@@ -1,52 +1,157 @@
 import { useEffect, useMemo, useState } from 'react'
 
+const QUIZ_MODES = ['listening', 'forward', 'reverse', 'cloze']
 const MODE_LABELS = {
-  mixed: '혼합',
+  listening: '듣기',
   forward: '폴 → 한',
   reverse: '한 → 폴',
   cloze: '빈칸',
-  listening: '듣기',
 }
 
-const hashText = (text = '') => {
-  let hash = 0
-  for (let i = 0; i < text.length; i += 1) hash = ((hash << 5) - hash + text.charCodeAt(i)) | 0
-  return Math.abs(hash)
-}
+const BAND_TAGS = new Set(['core3000', 'core-500', 'core-1000', 'core-2000', 'core-3000'])
+
+const normalize = (value = '') => String(value)
+  .normalize('NFC')
+  .trim()
+  .toLocaleLowerCase('pl-PL')
+  .replace(/[.!?,;:]+$/g, '')
+  .replace(/\s+/g, ' ')
 
 const escapeRegExp = (value = '') => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+const asList = (value) => Array.isArray(value) ? value.filter(Boolean) : []
+const uniqueText = (items) => Array.from(new Map(items.filter(Boolean).map((value) => [normalize(value), String(value).trim()])).values())
 
-function getAvailableModes(word) {
-  const modes = ['forward', 'reverse', 'listening']
-  if (word?.example && word?.word) {
-    const pattern = new RegExp(`\\b${escapeRegExp(word.word)}\\b`, 'i')
-    if (pattern.test(word.example)) modes.push('cloze')
+const shuffle = (items) => {
+  const next = [...items]
+  for (let i = next.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[next[i], next[j]] = [next[j], next[i]]
   }
-  return modes
+  return next
 }
 
-function resolveMode(word, selectedMode) {
-  if (!word) return 'forward'
-  if (selectedMode !== 'mixed') {
-    if (selectedMode === 'cloze' && !getAvailableModes(word).includes('cloze')) return 'forward'
-    return selectedMode
-  }
-  const modes = getAvailableModes(word)
-  const key = `${word.id || word.word}-${new Date().toISOString().slice(0, 10)}`
-  return modes[hashText(key) % modes.length]
+const posOf = (entry) => (entry?.tags || []).find((tag) => !BAND_TAGS.has(tag)) || 'core'
+const bandOf = (entry) => (entry?.tags || []).find((tag) => /^core-\d+$/.test(tag)) || ''
+const acceptedPolish = (word) => uniqueText([word?.word, ...asList(word?.accepted_answers)])
+const acceptedKorean = (word) => uniqueText([word?.meaning, ...asList(word?.accepted_meanings)])
+
+const commonEdgeScore = (a = '', b = '') => {
+  const x = normalize(a)
+  const y = normalize(b)
+  let prefix = 0
+  let suffix = 0
+  while (prefix < Math.min(x.length, y.length) && x[prefix] === y[prefix]) prefix += 1
+  while (suffix < Math.min(x.length, y.length) && x[x.length - 1 - suffix] === y[y.length - 1 - suffix]) suffix += 1
+  return Math.min(3, prefix) + Math.min(3, suffix)
+}
+
+function similarDistractors(word, coreEntries, mode) {
+  if (!word || !coreEntries?.length) return []
+  const target = coreEntries.find((entry) => normalize(entry.word) === normalize(word.word)) || word
+  const targetPos = posOf(target)
+  const targetBand = bandOf(target)
+  const targetRank = Number(target.rank || 1500)
+  const targetMeaningLength = (target.meaning || word.meaning || '').length
+  const validWords = new Set(acceptedPolish(word).map(normalize))
+  const validMeanings = new Set(acceptedKorean(word).map(normalize))
+
+  const seen = new Set()
+  const candidates = coreEntries
+    .filter((entry) => !validWords.has(normalize(entry.word)))
+    .filter((entry) => mode !== 'forward' || !validMeanings.has(normalize(entry.meaning)))
+    .filter((entry) => {
+      const value = mode === 'forward' ? normalize(entry.meaning) : normalize(entry.word)
+      if (!value || seen.has(value)) return false
+      seen.add(value)
+      return true
+    })
+    .map((entry) => {
+      let score = 0
+      if (posOf(entry) === targetPos) score += 8
+      if (targetBand && bandOf(entry) === targetBand) score += 2
+      const rankDistance = Math.abs(Number(entry.rank || 1500) - targetRank)
+      score += Math.max(0, 4 - Math.log10(rankDistance + 1) * 1.8)
+
+      if (mode === 'listening') {
+        score += commonEdgeScore(entry.word, word.word) * 1.5
+        score += Math.max(0, 4 - Math.abs(entry.word.length - word.word.length))
+      } else {
+        score += Math.max(0, 3 - Math.abs((entry.meaning || '').length - targetMeaningLength) / 4)
+      }
+      return { entry, score }
+    })
+    .sort((a, b) => b.score - a.score)
+
+  return shuffle(candidates.slice(0, 24)).slice(0, 3).map(({ entry }) => entry)
+}
+
+function makeOptions(word, coreEntries, mode) {
+  const distractors = similarDistractors(word, coreEntries, mode)
+  const raw = mode === 'forward'
+    ? [{ value: word.meaning, correct: true }, ...distractors.map((entry) => ({ value: entry.meaning, correct: false }))]
+    : [{ value: word.word, correct: true }, ...distractors.map((entry) => ({ value: entry.word, correct: false }))]
+
+  const seen = new Set()
+  return shuffle(raw.filter((option) => {
+    const key = normalize(option.value)
+    if (!key || seen.has(key)) return false
+    seen.add(key)
+    return true
+  })).slice(0, 4)
 }
 
 function clozeExample(word) {
-  if (!word?.example || !word?.word) return ''
-  const pattern = new RegExp(`\\b${escapeRegExp(word.word)}\\b`, 'i')
-  return word.example.replace(pattern, '________')
+  const example = word?.example || `W tekście pojawia się słowo „${word?.word || ''}”.`
+  const targets = acceptedPolish(word).sort((a, b) => b.length - a.length)
+  for (const target of targets) {
+    if (!target) continue
+    const pattern = new RegExp(`(^|[^\\p{L}\\p{N}_])(${escapeRegExp(target)})(?=$|[^\\p{L}\\p{N}_])`, 'iu')
+    const match = pattern.exec(example)
+    if (!match) continue
+    const index = match.index + match[1].length
+    return `${example.slice(0, index)}________${example.slice(index + match[2].length)}`
+  }
+  return `${example} → ________`
 }
 
-export default function ReviewCard({ word, position, total, onGrade, selectedMode = 'mixed' }) {
-  const [revealed, setRevealed] = useState(false)
-  const activeMode = useMemo(() => resolveMode(word, selectedMode), [word?.id, selectedMode])
+function resultLabel(score) {
+  if (score === 4) return '쉬움 · 가장 긴 복습 간격'
+  if (score === 3) return '알아요 · 다음 간격은 조금 짧게'
+  if (score === 2) return '어려움 · 더 짧게 복습'
+  return '다시 · 내일 다시 복습'
+}
 
-  useEffect(() => setRevealed(false), [word?.id, activeMode])
+const linesToList = (value = '') => uniqueText(String(value).split(/\n+/).map((item) => item.trim()))
+const listToLines = (value) => asList(value).join('\n')
+
+export default function ReviewCard({ word, position, total, onComplete, onSaveCorrection, coreEntries = [] }) {
+  const [questionIndex, setQuestionIndex] = useState(0)
+  const [correctCount, setCorrectCount] = useState(0)
+  const [results, setResults] = useState([])
+  const [typedAnswer, setTypedAnswer] = useState('')
+  const [feedback, setFeedback] = useState(null)
+  const [submitting, setSubmitting] = useState(false)
+  const [flagOpen, setFlagOpen] = useState(false)
+  const [flagSaving, setFlagSaving] = useState(false)
+  const [flagForm, setFlagForm] = useState(null)
+
+  const questionOrder = useMemo(() => shuffle(QUIZ_MODES), [word?.id, word?.review_count])
+  const activeMode = questionOrder[questionIndex] || 'forward'
+  const options = useMemo(
+    () => (activeMode === 'forward' || activeMode === 'listening' ? makeOptions(word, coreEntries, activeMode) : []),
+    [word?.id, word?.word, word?.meaning, word?.accepted_answers, word?.accepted_meanings, questionIndex, activeMode, coreEntries],
+  )
+
+  useEffect(() => {
+    setQuestionIndex(0)
+    setCorrectCount(0)
+    setResults([])
+    setTypedAnswer('')
+    setFeedback(null)
+    setSubmitting(false)
+    setFlagOpen(false)
+    setFlagForm(null)
+  }, [word?.id])
 
   const speak = () => {
     if (!word?.word || !('speechSynthesis' in window)) return
@@ -58,11 +163,10 @@ export default function ReviewCard({ word, position, total, onGrade, selectedMod
   }
 
   useEffect(() => {
-    if (activeMode === 'listening' && word) {
-      const timer = window.setTimeout(speak, 180)
-      return () => window.clearTimeout(timer)
-    }
-  }, [word?.id, activeMode])
+    if (activeMode !== 'listening' || !word || feedback) return undefined
+    const timer = window.setTimeout(speak, 180)
+    return () => window.clearTimeout(timer)
+  }, [word?.id, activeMode, questionIndex])
 
   if (!word) {
     return (
@@ -74,45 +178,253 @@ export default function ReviewCard({ word, position, total, onGrade, selectedMod
     )
   }
 
-  const prompt = (() => {
-    if (activeMode === 'reverse') return <div className="review-word review-word-meaning">{word.meaning}</div>
-    if (activeMode === 'cloze') return <div className="cloze-prompt">{clozeExample(word)}</div>
-    if (activeMode === 'listening') {
-      return (
-        <div className="listening-prompt">
-          <button type="button" className="speaker-btn" onClick={speak} aria-label="폴란드어 발음 다시 듣기">🔊</button>
-          <strong>듣고 단어를 떠올려보세요</strong>
-          <span>버튼을 누르면 다시 들을 수 있어요.</span>
-        </div>
-      )
+  const answerQuestion = (isCorrect, selectedValue = '') => {
+    if (feedback) return
+    const nextScore = correctCount + (isCorrect ? 1 : 0)
+    setCorrectCount(nextScore)
+    setResults((previous) => {
+      const next = [...previous]
+      next[questionIndex] = isCorrect
+      return next
+    })
+    setFeedback({ isCorrect, selectedValue, nextScore })
+  }
+
+  const isAcceptedTyped = (value) => acceptedPolish(word).some((answer) => normalize(answer) === normalize(value))
+
+  const submitTyped = (event) => {
+    event?.preventDefault()
+    if (!typedAnswer.trim() || feedback) return
+    answerQuestion(isAcceptedTyped(typedAnswer), typedAnswer)
+  }
+
+  const moveNext = async () => {
+    if (!feedback || submitting) return
+    if (questionIndex < 3) {
+      setQuestionIndex((value) => value + 1)
+      setTypedAnswer('')
+      setFeedback(null)
+      return
     }
-    return <div className="review-word">{word.word}</div>
-  })()
+
+    setSubmitting(true)
+    try {
+      await onComplete(feedback.nextScore)
+    } finally {
+      setSubmitting(false)
+    }
+  }
+
+  const openFlag = () => {
+    setFlagForm({
+      word: word.word || '',
+      meaning: word.meaning || '',
+      example: word.example || '',
+      example_ko: word.example_ko || '',
+      accepted_answers: listToLines(word.accepted_answers),
+      accepted_meanings: listToLines(word.accepted_meanings),
+      acceptCurrent: Boolean(feedback && !feedback.isCorrect),
+    })
+    setFlagOpen(true)
+  }
+
+  const saveFlag = async (event) => {
+    event.preventDefault()
+    if (!flagForm || flagSaving) return
+    setFlagSaving(true)
+    try {
+      let extraAnswers = linesToList(flagForm.accepted_answers)
+      let extraMeanings = linesToList(flagForm.accepted_meanings)
+
+      if (flagForm.acceptCurrent && feedback?.selectedValue) {
+        if (activeMode === 'forward') extraMeanings = uniqueText([...extraMeanings, feedback.selectedValue])
+        else extraAnswers = uniqueText([...extraAnswers, feedback.selectedValue])
+      }
+
+      const updates = {
+        word: flagForm.word.trim(),
+        meaning: flagForm.meaning.trim(),
+        example: flagForm.example.trim(),
+        example_ko: flagForm.example_ko.trim(),
+        accepted_answers: extraAnswers.filter((item) => normalize(item) !== normalize(flagForm.word)),
+        accepted_meanings: extraMeanings.filter((item) => normalize(item) !== normalize(flagForm.meaning)),
+      }
+
+      await onSaveCorrection?.(word, updates)
+
+      if (flagForm.acceptCurrent && feedback && !feedback.isCorrect) {
+        const repairedScore = feedback.nextScore + 1
+        setCorrectCount((value) => value + 1)
+        setResults((previous) => {
+          const next = [...previous]
+          next[questionIndex] = true
+          return next
+        })
+        setFeedback((previous) => ({ ...previous, isCorrect: true, nextScore: repairedScore, corrected: true }))
+      }
+
+      setFlagOpen(false)
+    } catch (error) {
+      console.error(error)
+    } finally {
+      setFlagSaving(false)
+    }
+  }
+
+  const questionProgress = ((questionIndex + 1) / 4) * 100
+  const isChoiceMode = activeMode === 'forward' || activeMode === 'listening'
+  const isTypedMode = activeMode === 'reverse' || activeMode === 'cloze'
+  const acceptedKoreanSet = new Set(acceptedKorean(word).map(normalize))
+  const acceptedPolishSet = new Set(acceptedPolish(word).map(normalize))
 
   return (
-    <section className="review-card panel">
+    <section className="review-card quiz-card panel">
       <div className="review-topline">
-        <span>{position} / {total}</span>
-        <span>{MODE_LABELS[activeMode]} · {word.tags?.slice(0, 2).join(' · ') || 'VOCAB'}</span>
+        <span>단어 {position} / {total}</span>
+        <span>{MODE_LABELS[activeMode]} · 문제 {questionIndex + 1}/4</span>
       </div>
-      <div className="progress"><span style={{ width: `${Math.max(6, total ? (position / total) * 100 : 0)}%` }} /></div>
+      <div className="progress"><span style={{ width: `${questionProgress}%` }} /></div>
+      <div className="quiz-score-dots" aria-label={`현재 ${correctCount}개 정답`}>
+        {questionOrder.map((mode, index) => {
+          const resultClass = results[index] === true ? 'correct' : results[index] === false ? 'wrong' : ''
+          return <span key={`${mode}-${index}`} className={`${resultClass} ${index === questionIndex ? 'current' : ''}`} title={MODE_LABELS[mode]} />
+        })}
+      </div>
 
-      <div className="prompt-area">{prompt}</div>
+      <div className="quiz-prompt-area">
+        {activeMode === 'forward' && (
+          <>
+            <span className="quiz-instruction">가장 알맞은 한국어 뜻을 고르세요</span>
+            <div className="review-word">{word.word}</div>
+          </>
+        )}
 
-      {!revealed ? (
-        <button className="reveal-btn" onClick={() => setRevealed(true)}>정답 보기</button>
-      ) : (
-        <div className="answer-area">
-          {activeMode !== 'forward' && <div className="answer-word">{word.word}</div>}
-          <div className="meaning">{word.meaning}</div>
-          {word.example && <div className="example">{word.example}</div>}
-          {word.note && <div className="note">{word.note}</div>}
-          <div className="grade-grid">
-            <button onClick={() => onGrade('again')}><strong>몰라요</strong><span>1일</span></button>
-            <button onClick={() => onGrade('hard')}><strong>어려움</strong><span>짧게</span></button>
-            <button onClick={() => onGrade('good')}><strong>알아요</strong><span>적당히</span></button>
-            <button onClick={() => onGrade('easy')}><strong>쉬움</strong><span>길게</span></button>
+        {activeMode === 'listening' && (
+          <div className="listening-prompt">
+            <button type="button" className="speaker-btn" onClick={speak} aria-label="폴란드어 발음 다시 듣기">🔊</button>
+            <strong>들은 단어를 고르세요</strong>
+            <span>비슷한 단어 3개가 함께 나와요.</span>
           </div>
+        )}
+
+        {activeMode === 'reverse' && (
+          <>
+            <span className="quiz-instruction">폴란드어로 직접 입력하세요</span>
+            <div className="review-word review-word-meaning">{word.meaning}</div>
+          </>
+        )}
+
+        {activeMode === 'cloze' && (
+          <>
+            <span className="quiz-instruction">한국어 문장을 보고 폴란드어 빈칸을 완성하세요</span>
+            <div className="cloze-ko-sentence">
+              <small>한국어</small>
+              <strong>{word.example_ko || `이 문장에서는 “${word.meaning}”이라는 뜻으로 사용돼요.`}</strong>
+            </div>
+            <div className="cloze-prompt">{clozeExample(word)}</div>
+          </>
+        )}
+      </div>
+
+      {isChoiceMode && (
+        <div className="choice-grid">
+          {options.map((option) => {
+            const optionIsCorrect = option.correct || (activeMode === 'forward'
+              ? acceptedKoreanSet.has(normalize(option.value))
+              : acceptedPolishSet.has(normalize(option.value)))
+            const chosen = feedback?.selectedValue === option.value
+            const stateClass = feedback
+              ? optionIsCorrect ? 'correct' : chosen ? 'wrong' : 'dimmed'
+              : ''
+            return (
+              <button
+                key={option.value}
+                type="button"
+                className={stateClass}
+                disabled={Boolean(feedback)}
+                onClick={() => answerQuestion(optionIsCorrect, option.value)}
+              >
+                {option.value}
+              </button>
+            )
+          })}
+        </div>
+      )}
+
+      {isTypedMode && (
+        <form className="typed-answer" onSubmit={submitTyped}>
+          <input
+            value={typedAnswer}
+            disabled={Boolean(feedback)}
+            onChange={(event) => setTypedAnswer(event.target.value)}
+            placeholder="폴란드어 입력"
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="none"
+            spellCheck="false"
+          />
+          {!feedback && <button type="submit" className="primary-btn" disabled={!typedAnswer.trim()}>확인</button>}
+        </form>
+      )}
+
+      {feedback && (
+        <div className={`quiz-feedback ${feedback.isCorrect ? 'correct' : 'wrong'}`}>
+          <div className="feedback-copy">
+            <strong>{feedback.corrected ? '정답으로 수정됨' : feedback.isCorrect ? '정답' : '오답'}</strong>
+            <span>{feedback.isCorrect ? `${word.word} · ${word.meaning}` : <>정답: <b>{word.word}</b> · {word.meaning}</>}</span>
+            {activeMode === 'cloze' && word.example && <small>{word.example}</small>}
+            {questionIndex === 3 && <small>{feedback.nextScore}/4 · {resultLabel(feedback.nextScore)}</small>}
+          </div>
+          <div className="feedback-actions">
+            <button type="button" className="flag-btn" onClick={openFlag} title="정답/예문 오류 수정" aria-label="정답 또는 예문 오류 수정">⚑</button>
+            <button type="button" onClick={moveNext} disabled={submitting}>
+              {submitting ? '저장 중…' : questionIndex === 3 ? '다음 단어' : '다음 문제'}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {flagOpen && flagForm && (
+        <div className="correction-backdrop" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget) setFlagOpen(false) }}>
+          <form className="correction-modal" onSubmit={saveFlag} role="dialog" aria-modal="true" aria-labelledby="correction-title">
+            <div className="correction-heading">
+              <div>
+                <span className="eyebrow">FLAG & CORRECT</span>
+                <h3 id="correction-title">정답 데이터 수정</h3>
+              </div>
+              <button type="button" className="modal-close" onClick={() => setFlagOpen(false)} aria-label="닫기">×</button>
+            </div>
+
+            {feedback?.selectedValue && (
+              <div className="flag-current-answer">
+                <span>이번에 입력/선택한 답</span>
+                <strong>{feedback.selectedValue}</strong>
+              </div>
+            )}
+
+            <div className="correction-grid">
+              <label>폴란드어 정답<input value={flagForm.word} onChange={(e) => setFlagForm((v) => ({ ...v, word: e.target.value }))} required /></label>
+              <label>한국어 뜻<input value={flagForm.meaning} onChange={(e) => setFlagForm((v) => ({ ...v, meaning: e.target.value }))} required /></label>
+              <label className="span-2">폴란드어 예문<textarea rows="3" value={flagForm.example} onChange={(e) => setFlagForm((v) => ({ ...v, example: e.target.value }))} /></label>
+              <label className="span-2">한국어 예문<textarea rows="3" value={flagForm.example_ko} onChange={(e) => setFlagForm((v) => ({ ...v, example_ko: e.target.value }))} /></label>
+              <label>추가 인정 폴란드어 정답<textarea rows="3" value={flagForm.accepted_answers} onChange={(e) => setFlagForm((v) => ({ ...v, accepted_answers: e.target.value }))} placeholder={'한 줄에 하나씩\n예: zrobiłem'} /></label>
+              <label>추가 인정 한국어 뜻<textarea rows="3" value={flagForm.accepted_meanings} onChange={(e) => setFlagForm((v) => ({ ...v, accepted_meanings: e.target.value }))} placeholder={'한 줄에 하나씩\n예: 만들다'} /></label>
+            </div>
+
+            {feedback && !feedback.isCorrect && (
+              <label className="accept-current-row">
+                <input type="checkbox" checked={flagForm.acceptCurrent} onChange={(e) => setFlagForm((v) => ({ ...v, acceptCurrent: e.target.checked }))} />
+                <span>이번 답도 정답으로 인정하고 현재 문제 점수를 복구</span>
+              </label>
+            )}
+
+            <p className="correction-help">복수 정답이면 기존 정답을 지우지 말고 ‘추가 인정 정답’에 한 줄씩 넣으면 다음 복습부터 모두 정답 처리돼요.</p>
+
+            <div className="correction-actions">
+              <button type="button" className="secondary-btn" onClick={() => setFlagOpen(false)}>취소</button>
+              <button type="submit" className="primary-btn" disabled={flagSaving}>{flagSaving ? '저장 중…' : '수정 저장'}</button>
+            </div>
+          </form>
         </div>
       )}
     </section>
