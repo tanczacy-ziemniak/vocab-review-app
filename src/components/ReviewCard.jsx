@@ -328,10 +328,13 @@ export default function ReviewCard({ word, position, total, domainLabel, onCompl
           <>
             <span className="quiz-instruction">한국어 문장을 보고 폴란드어 빈칸을 완성하세요</span>
             <div className="cloze-ko-sentence">
-              <small>한국어</small>
-              <strong>{word.example_ko || `이 문장에서는 “${word.meaning}”이라는 뜻으로 사용돼요.`}</strong>
+              <small>한국어 번역</small>
+              <strong>{word.example_ko || '한국어 번역이 아직 등록되지 않았어요. ⚑에서 예문 번역을 추가해 주세요.'}</strong>
             </div>
-            <div className="cloze-prompt">{clozeExample(word)}</div>
+            <div className="cloze-pl-sentence">
+              <small>폴란드어</small>
+              <div className="cloze-prompt">{clozeExample(word)}</div>
+            </div>
           </>
         )}
       </div>

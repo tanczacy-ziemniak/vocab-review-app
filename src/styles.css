@@ -411,3 +411,17 @@ code { background: var(--soft); border-radius: 6px; padding: 2px 5px; }
   .setting-actions-grid { grid-template-columns: 1fr; }
   .review-topline { font-size: 10px; }
 }
+
+
+.cloze-pl-sentence {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
+.cloze-pl-sentence > small {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
