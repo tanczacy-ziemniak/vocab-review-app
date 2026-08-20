@@ -19,6 +19,7 @@ const normalize = (value = '') => String(value)
 
 const escapeRegExp = (value = '') => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 const asList = (value) => Array.isArray(value) ? value.filter(Boolean) : []
+const asBoolList = (value) => Array.isArray(value) ? value.filter((item) => typeof item === 'boolean') : []
 const uniqueText = (items) => Array.from(new Map(items.filter(Boolean).map((value) => [normalize(value), String(value).trim()])).values())
 
 const shuffle = (items) => {
@@ -34,6 +35,24 @@ const posOf = (entry) => (entry?.tags || []).find((tag) => !BAND_TAGS.has(tag)) 
 const bandOf = (entry) => (entry?.tags || []).find((tag) => /^core-\d+$/.test(tag)) || ''
 const acceptedPolish = (word) => uniqueText([word?.word, ...asList(word?.accepted_answers)])
 const acceptedKorean = (word) => uniqueText([word?.meaning, ...asList(word?.accepted_meanings)])
+
+/**
+ * 한 번의 복습에서는 문제 하나만 낸다.
+ * 완전한 순수 랜덤 대신 최근 4회에서 덜 나온 유형을 우선한 뒤 그 안에서 랜덤 선택한다.
+ * 따라서 같은 날 네 유형이 연속으로 나오지 않으면서도 장기적으로 네 유형이 고르게 섞인다.
+ */
+function chooseQuizMode(recentModes = []) {
+  const recent = asList(recentModes).filter((mode) => QUIZ_MODES.includes(mode)).slice(-4)
+  const counts = Object.fromEntries(QUIZ_MODES.map((mode) => [mode, recent.filter((item) => item === mode).length]))
+  const minimum = Math.min(...QUIZ_MODES.map((mode) => counts[mode]))
+  let candidates = QUIZ_MODES.filter((mode) => counts[mode] === minimum)
+  const lastMode = recent.at(-1)
+  if (candidates.length > 1 && lastMode) {
+    const withoutImmediateRepeat = candidates.filter((mode) => mode !== lastMode)
+    if (withoutImmediateRepeat.length) candidates = withoutImmediateRepeat
+  }
+  return candidates[Math.floor(Math.random() * candidates.length)] || 'forward'
+}
 
 const commonEdgeScore = (a = '', b = '') => {
   const x = normalize(a)
@@ -114,20 +133,20 @@ function clozeExample(word) {
   return `${example} → ________`
 }
 
-function resultLabel(score) {
-  if (score === 4) return '쉬움 · 가장 긴 복습 간격'
-  if (score === 3) return '알아요 · 다음 간격은 조금 짧게'
-  if (score === 2) return '어려움 · 더 짧게 복습'
-  return '다시 · 내일 다시 복습'
+function difficultyFromResults(results = []) {
+  const recent = asBoolList(results).slice(-4)
+  if (recent.length < 4) return { grade: 'learning', label: '측정 중', score: recent.filter(Boolean).length, count: recent.length }
+  const score = recent.filter(Boolean).length
+  if (score === 4) return { grade: 'easy', label: '쉬움', score, count: 4 }
+  if (score === 3) return { grade: 'good', label: '알아요', score, count: 4 }
+  if (score === 2) return { grade: 'hard', label: '어려움', score, count: 4 }
+  return { grade: 'again', label: '다시', score, count: 4 }
 }
 
 const linesToList = (value = '') => uniqueText(String(value).split(/\n+/).map((item) => item.trim()))
 const listToLines = (value) => asList(value).join('\n')
 
-export default function ReviewCard({ word, position, total, onComplete, onSaveCorrection, coreEntries = [] }) {
-  const [questionIndex, setQuestionIndex] = useState(0)
-  const [correctCount, setCorrectCount] = useState(0)
-  const [results, setResults] = useState([])
+export default function ReviewCard({ word, position, total, domainLabel, onComplete, onSaveCorrection, coreEntries = [] }) {
   const [typedAnswer, setTypedAnswer] = useState('')
   const [feedback, setFeedback] = useState(null)
   const [submitting, setSubmitting] = useState(false)
@@ -135,17 +154,16 @@ export default function ReviewCard({ word, position, total, onComplete, onSaveCo
   const [flagSaving, setFlagSaving] = useState(false)
   const [flagForm, setFlagForm] = useState(null)
 
-  const questionOrder = useMemo(() => shuffle(QUIZ_MODES), [word?.id, word?.review_count])
-  const activeMode = questionOrder[questionIndex] || 'forward'
+  const activeMode = useMemo(
+    () => chooseQuizMode(word?.recent_quiz_modes),
+    [word?.id, word?.review_count, JSON.stringify(word?.recent_quiz_modes || [])],
+  )
   const options = useMemo(
     () => (activeMode === 'forward' || activeMode === 'listening' ? makeOptions(word, coreEntries, activeMode) : []),
-    [word?.id, word?.word, word?.meaning, word?.accepted_answers, word?.accepted_meanings, questionIndex, activeMode, coreEntries],
+    [word?.id, word?.word, word?.meaning, word?.accepted_answers, word?.accepted_meanings, activeMode, coreEntries],
   )
 
   useEffect(() => {
-    setQuestionIndex(0)
-    setCorrectCount(0)
-    setResults([])
     setTypedAnswer('')
     setFeedback(null)
     setSubmitting(false)
@@ -166,7 +184,7 @@ export default function ReviewCard({ word, position, total, onComplete, onSaveCo
     if (activeMode !== 'listening' || !word || feedback) return undefined
     const timer = window.setTimeout(speak, 180)
     return () => window.clearTimeout(timer)
-  }, [word?.id, activeMode, questionIndex])
+  }, [word?.id, activeMode])
 
   if (!word) {
     return (
@@ -178,16 +196,18 @@ export default function ReviewCard({ word, position, total, onComplete, onSaveCo
     )
   }
 
+  const savedResults = asBoolList(word.recent_results).slice(-4)
+  const previewResults = feedback ? [...savedResults, Boolean(feedback.isCorrect)].slice(-4) : savedResults
+  const difficulty = difficultyFromResults(previewResults)
+  const historyDots = Array.from({ length: 4 }, (_, index) => {
+    const offset = 4 - previewResults.length
+    if (index < offset) return null
+    return previewResults[index - offset]
+  })
+
   const answerQuestion = (isCorrect, selectedValue = '') => {
     if (feedback) return
-    const nextScore = correctCount + (isCorrect ? 1 : 0)
-    setCorrectCount(nextScore)
-    setResults((previous) => {
-      const next = [...previous]
-      next[questionIndex] = isCorrect
-      return next
-    })
-    setFeedback({ isCorrect, selectedValue, nextScore })
+    setFeedback({ isCorrect, selectedValue })
   }
 
   const isAcceptedTyped = (value) => acceptedPolish(word).some((answer) => normalize(answer) === normalize(value))
@@ -200,16 +220,9 @@ export default function ReviewCard({ word, position, total, onComplete, onSaveCo
 
   const moveNext = async () => {
     if (!feedback || submitting) return
-    if (questionIndex < 3) {
-      setQuestionIndex((value) => value + 1)
-      setTypedAnswer('')
-      setFeedback(null)
-      return
-    }
-
     setSubmitting(true)
     try {
-      await onComplete(feedback.nextScore)
+      await onComplete(Boolean(feedback.isCorrect), activeMode)
     } finally {
       setSubmitting(false)
     }
@@ -253,14 +266,7 @@ export default function ReviewCard({ word, position, total, onComplete, onSaveCo
       await onSaveCorrection?.(word, updates)
 
       if (flagForm.acceptCurrent && feedback && !feedback.isCorrect) {
-        const repairedScore = feedback.nextScore + 1
-        setCorrectCount((value) => value + 1)
-        setResults((previous) => {
-          const next = [...previous]
-          next[questionIndex] = true
-          return next
-        })
-        setFeedback((previous) => ({ ...previous, isCorrect: true, nextScore: repairedScore, corrected: true }))
+        setFeedback((previous) => ({ ...previous, isCorrect: true, corrected: true }))
       }
 
       setFlagOpen(false)
@@ -271,7 +277,6 @@ export default function ReviewCard({ word, position, total, onComplete, onSaveCo
     }
   }
 
-  const questionProgress = ((questionIndex + 1) / 4) * 100
   const isChoiceMode = activeMode === 'forward' || activeMode === 'listening'
   const isTypedMode = activeMode === 'reverse' || activeMode === 'cloze'
   const acceptedKoreanSet = new Set(acceptedKorean(word).map(normalize))
@@ -281,14 +286,19 @@ export default function ReviewCard({ word, position, total, onComplete, onSaveCo
     <section className="review-card quiz-card panel">
       <div className="review-topline">
         <span>단어 {position} / {total}</span>
-        <span>{MODE_LABELS[activeMode]} · 문제 {questionIndex + 1}/4</span>
+        <span>{MODE_LABELS[activeMode]}{domainLabel ? ` · ${domainLabel}` : ''}</span>
       </div>
-      <div className="progress"><span style={{ width: `${questionProgress}%` }} /></div>
-      <div className="quiz-score-dots" aria-label={`현재 ${correctCount}개 정답`}>
-        {questionOrder.map((mode, index) => {
-          const resultClass = results[index] === true ? 'correct' : results[index] === false ? 'wrong' : ''
-          return <span key={`${mode}-${index}`} className={`${resultClass} ${index === questionIndex ? 'current' : ''}`} title={MODE_LABELS[mode]} />
-        })}
+
+      <div className="rolling-history" aria-label="최근 네 번의 복습 결과">
+        <div className="history-copy">
+          <strong>{difficulty.count < 4 ? `난이도 측정 ${difficulty.count}/4` : `최근 4회 ${difficulty.score}/4 · ${difficulty.label}`}</strong>
+          <span>{difficulty.count < 4 ? '4회가 쌓일 때까지 하루 간격으로 확인해요.' : '항상 가장 최근 4회만 난이도에 반영돼요.'}</span>
+        </div>
+        <div className="history-dots" aria-hidden="true">
+          {historyDots.map((result, index) => (
+            <i key={index} className={result === true ? 'correct' : result === false ? 'wrong' : 'empty'} />
+          ))}
+        </div>
       </div>
 
       <div className="quiz-prompt-area">
@@ -373,12 +383,12 @@ export default function ReviewCard({ word, position, total, onComplete, onSaveCo
             <strong>{feedback.corrected ? '정답으로 수정됨' : feedback.isCorrect ? '정답' : '오답'}</strong>
             <span>{feedback.isCorrect ? `${word.word} · ${word.meaning}` : <>정답: <b>{word.word}</b> · {word.meaning}</>}</span>
             {activeMode === 'cloze' && word.example && <small>{word.example}</small>}
-            {questionIndex === 3 && <small>{feedback.nextScore}/4 · {resultLabel(feedback.nextScore)}</small>}
+            <small>{difficulty.count < 4 ? `이번 결과 포함 ${difficulty.count}/4회 수집` : `최근 4회 기준: ${difficulty.label} (${difficulty.score}/4)`}</small>
           </div>
           <div className="feedback-actions">
             <button type="button" className="flag-btn" onClick={openFlag} title="정답/예문 오류 수정" aria-label="정답 또는 예문 오류 수정">⚑</button>
-            <button type="button" onClick={moveNext} disabled={submitting}>
-              {submitting ? '저장 중…' : questionIndex === 3 ? '다음 단어' : '다음 문제'}
+            <button type="button" className="next-word-btn" onClick={moveNext} disabled={submitting}>
+              {submitting ? '저장 중…' : '다음 단어'}
             </button>
           </div>
         </div>
@@ -414,7 +424,7 @@ export default function ReviewCard({ word, position, total, onComplete, onSaveCo
             {feedback && !feedback.isCorrect && (
               <label className="accept-current-row">
                 <input type="checkbox" checked={flagForm.acceptCurrent} onChange={(e) => setFlagForm((v) => ({ ...v, acceptCurrent: e.target.checked }))} />
-                <span>이번 답도 정답으로 인정하고 현재 문제 점수를 복구</span>
+                <span>이번 답도 정답으로 인정하고 이번 복습 결과를 정답으로 복구</span>
               </label>
             )}
 

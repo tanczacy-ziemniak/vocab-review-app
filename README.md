@@ -1,127 +1,92 @@
-# Reword V3.3 — Four-Way Quiz + Flag Corrections
+# Reword V3.5 — Unlimited Review + Goals + XP + Field Stats
 
-개인용 폴란드어 단어 복습 앱입니다. React + Vite + Supabase + Netlify 구성입니다.
+## V3.5 핵심 변경
 
-## V3.3 핵심 변경
+- **하루 복습 문제 수 제한 제거**
+  - Core 3000 설치 즉시 미학습 단어 전체가 복습 후보가 됩니다.
+  - 기존 V3.x에서 미래 날짜로 예약된 미학습 Core 단어도 V3.5에서 자동으로 풀립니다.
+  - 이미 한 번 이상 복습한 단어의 SRS 일정은 그대로 유지합니다.
 
-한 단어마다 아래 4개 문제를 랜덤 순서로 모두 풉니다.
+- **일일 목표 설정: 1 / 5 / 10 / 20 문제**
+  - 설정한 목표를 채운 날만 연속 학습일(streak)이 증가합니다.
+  - 목표를 초과해서 더 푸는 것은 제한이 없습니다.
+  - 목표를 바꿔도 각 복습 기록에 당시 목표가 함께 저장되므로 V3.5 이후 과거 streak 기준이 뒤집히지 않습니다.
 
-1. **듣기** — `pl-PL` TTS를 듣고 비슷한 폴란드어 3개와 함께 4지선다
-2. **폴 → 한** — 폴란드어를 보고 한국어 뜻 4지선다
-3. **한 → 폴** — 한국어 뜻을 보고 폴란드어 직접 입력
-4. **빈칸** — **한국어 예문을 먼저 보고**, 폴란드어 예문의 빈칸을 직접 입력
+- **XP / Level**
+  - 정답: +12 XP
+  - 오답: +6 XP
+  - 틀려도 실제 학습 행동에 대한 XP를 받습니다.
+  - Today 화면에서 전체 레벨과 다음 레벨까지 진행률을 확인할 수 있습니다.
 
-점수에 따른 복습 간격은 기존 V3.2와 같습니다.
+- **분야별 스탯**
+  - 기본 표현
+  - 사람·관계
+  - 집·일상
+  - 음식·쇼핑
+  - 이동·장소
+  - 일·학업
+  - 건강·몸
+  - 감정·생각
+  - 시간·수량
+  - 사회·행정
+  - 자연·환경
+  - 행동·상태
+  - 사물·기타
 
-- 4/4 → easy
-- 3/4 → good
-- 2/4 → hard
-- 0~1/4 → again
+  Core 3000을 위 범주로 자동 분류해 분야별 안정화 단어 수, 분야 XP, 분야 레벨을 표시합니다.
 
-## ⚑ Flag & Correct
+- **분야 선택 복습**
+  - `🎲 랜덤 분야`: 매 문제마다 사용 가능한 분야를 먼저 무작위로 고르고 그 안에서 단어를 고릅니다. 큰 분야가 문제를 독점하지 않도록 분야 단위 랜덤을 사용합니다.
+  - 특정 분야를 고르면 해당 분야에서만 복습합니다.
+  - Core 화면의 분야 스탯 카드를 누르면 해당 분야 복습으로 바로 이동합니다.
 
-문제를 푼 뒤 결과 영역의 **⚑ 버튼**을 누르면 해당 단어의 정답 데이터를 즉시 수정할 수 있습니다.
+- V3.4의 최근 4회 rolling difficulty, 랜덤 문제 유형 1개, Flag 수정, 복수 정답, 한국어+폴란드어 빈칸 문제는 그대로 유지합니다.
 
-수정 가능한 항목:
+## 기존 V3.4 사용자의 Supabase 업데이트
 
-- 폴란드어 기본 정답
-- 한국어 뜻
-- 폴란드어 예문
-- 한국어 예문
-- 추가로 인정할 폴란드어 정답(한 줄에 하나)
-- 추가로 인정할 한국어 뜻(한 줄에 하나)
+먼저 Supabase > SQL Editor에서 아래 파일을 한 번 실행하세요.
 
-오답으로 판정됐지만 실제로는 맞는 답이었다면 **“이번 답도 정답으로 인정하고 현재 문제 점수를 복구”**를 체크하고 저장하세요.
+`supabase/migrations/v3_5_goals_xp_domains.sql`
 
-- 한→폴 / 빈칸 / 듣기: 현재 답을 `accepted_answers`에 추가
-- 폴→한: 현재 선택을 `accepted_meanings`에 추가
-- 현재 문제의 오답 점수도 즉시 정답으로 복구
-- 이후 복습에서는 추가 정답도 자동으로 정답 처리
+이 migration은:
 
-따라서 동의어, 여러 가능한 번역, 활용형 등으로 인해 정답이 둘 이상인 경우도 처리할 수 있습니다.
+1. `reviews.goal_target`, `reviews.xp_earned` 추가
+2. `user_preferences` 테이블 추가
+3. 일일 목표와 XP를 계정에 동기화
+4. 아직 한 번도 복습하지 않은 Core 3000의 미래 잠금을 해제
 
-## Core 3000 한국어 예문
+기존 단어, 예문, Flag 수정 데이터, 복습 간격은 삭제하지 않습니다.
 
-Core 3000 데이터에는 다음 필드가 포함됩니다.
-
-```text
-word
-meaning
-example
-example_ko
-accepted_answers
-accepted_meanings
-```
-
-3,000개 모두 `example_ko`가 있으며, 3,000개 폴란드어 예문 모두 표제어를 포함하도록 검사했습니다.
-
-상위 고빈도 단어 일부 예문은 별도로 다듬었고, 긴 꼬리 어휘는 품사 기반 생성 예문/한국어 힌트를 사용합니다. 자동 생성 문장이 부자연스럽거나 의미가 애매하면 복습 중 ⚑로 바로 수정할 수 있습니다.
-
-## 기존 Supabase를 쓰고 있다면 — 이 SQL을 먼저 1회 실행
-
-V3.2 이하에서 이미 `words` 테이블을 만들었다면 배포 전에 Supabase **SQL Editor**에서 아래 파일을 실행하세요.
-
-```text
-supabase/migrations/v3_3_quiz_corrections.sql
-```
-
-내용은 새 컬럼 3개만 추가합니다.
-
-```sql
-alter table public.words
-  add column if not exists example_ko text not null default '',
-  add column if not exists accepted_answers text[] not null default '{}',
-  add column if not exists accepted_meanings text[] not null default '{}';
-```
-
-기존 단어와 리뷰 기록은 삭제되거나 초기화되지 않습니다.
-
-처음부터 새 Supabase 프로젝트를 만드는 경우에는 업데이트된 `supabase/schema.sql`만 실행하면 됩니다.
-
-## Core 3000 설치
-
-아직 Core 3000을 넣지 않았다면 가장 간단합니다.
-
-1. 위 migration 실행
-2. V3.3 배포
-3. 로그인
-4. `Core 3000` 메뉴
-5. 하루 새 단어 5 / 10 / 15 / 20 선택
-6. `Core 3000 추가`
-
-CSV import는 필요하지 않습니다. `example_ko`와 복수 정답 필드까지 앱이 Supabase `words` 테이블에 자동 저장합니다.
-
-## 환경변수
-
-```env
-VITE_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
-VITE_SUPABASE_ANON_KEY=YOUR_PUBLISHABLE_KEY
-```
-
-## 로컬 실행
-
-```bash
-npm install
-npm run dev
-```
-
-## Netlify 업데이트
-
-기존 GitHub repository 파일을 이 버전으로 교체한 뒤:
+그 후 기존 GitHub 프로젝트를 V3.5 파일로 교체하고:
 
 ```bash
 git add .
-git commit -m "Upgrade Reword to V3.3 flag corrections"
+git commit -m "Upgrade Reword to V3.5 goals and XP"
 git push
 ```
 
-기존 Netlify 사이트가 자동 재배포됩니다.
+Netlify가 기존 사이트를 자동 재배포합니다.
 
-## 모바일
+## 새 Supabase 프로젝트라면
 
-기존 iPhone/Safari 자동 줌 수정도 유지합니다.
+`supabase/schema.sql`을 한 번 실행하면 V3.5에 필요한 전체 테이블과 RLS가 생성됩니다.
 
-- form control 16px 이상
-- 자동 focus 없음
-- 메뉴 이동 시 활성 input blur
-- pinch zoom은 차단하지 않음
+## Netlify 환경변수
+
+기존과 동일합니다.
+
+```env
+VITE_SUPABASE_URL=...
+VITE_SUPABASE_ANON_KEY=...
+```
+
+## 복습 난이도
+
+한 단어는 한 번 등장할 때 문제 유형 하나만 나옵니다. 최근 4회의 서로 다른 복습 결과만 사용합니다.
+
+- 4/4: 쉬움
+- 3/4: 알아요
+- 2/4: 어려움
+- 0~1/4: 다시
+
+첫 4회가 쌓이기 전에는 1일 간격으로 다시 확인합니다.
