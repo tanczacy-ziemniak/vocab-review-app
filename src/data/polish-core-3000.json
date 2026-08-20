@@ -938,7 +938,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “좋은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dobry”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -986,7 +986,7 @@
       "core-500",
       "core"
     ],
-    "example_ko": "원본 빈도 자료에는 “~해야 하다”라는 뜻의 이 표기가 나와요.",
+    "example_ko": "원본 자료에 “musić”라는 표기가 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "사물·기타"
@@ -1274,7 +1274,7 @@
       "core-500",
       "core"
     ],
-    "example_ko": "문장에는 “더 많이”라는 말이 나와요.",
+    "example_ko": "본문에 “więcej”라는 단어가 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "사물·기타"
@@ -1322,7 +1322,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “모든”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wszystek”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -1354,7 +1354,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “단순한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “prosty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -1658,7 +1658,7 @@
       "core-500",
       "core"
     ],
-    "example_ko": "문장에는 “오케이”라는 말이 나와요.",
+    "example_ko": "본문에 “ok”라는 단어가 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "사물·기타"
@@ -1962,7 +1962,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “그런”이라는 뜻으로 사용돼요.",
+    "example_ko": "이것은 같은 모델이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -1978,7 +1978,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “~로서”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 엔지니어로 일해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -1994,7 +1994,7 @@
       "core-500",
       "num"
     ],
-    "example_ko": "이 문장에서는 “둘”이라는 뜻으로 사용돼요.",
+    "example_ko": "표 두 장이 필요해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -2074,7 +2074,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “많은”이라는 뜻으로 사용돼요.",
+    "example_ko": "많은 사람들이 여기서 일해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2090,7 +2090,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “여기서부터”이라는 뜻으로 사용돼요.",
+    "example_ko": "여기서 역까지 가까워요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2138,7 +2138,7 @@
       "core-500",
       "det"
     ],
-    "example_ko": "문장에는 “몇”이라는 뜻의 단어가 사용돼요.",
+    "example_ko": "이 문장에서는 “kilka”라는 단어를 사용했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -2186,7 +2186,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “얼마나”이라는 뜻으로 사용돼요.",
+    "example_ko": "이거 얼마예요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -2202,7 +2202,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “밝은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “jasny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -2218,7 +2218,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “자신의”이라는 뜻으로 사용돼요.",
+    "example_ko": "사람마다 자기만의 방식이 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2234,7 +2234,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “전체의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “cały”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -2250,7 +2250,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “어디서”이라는 뜻으로 사용돼요.",
+    "example_ko": "어디에서 왔어요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2314,7 +2314,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “어떤”이라는 뜻으로 사용돼요.",
+    "example_ko": "휴대전화에 어떤 문제가 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2330,7 +2330,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “~위에”이라는 뜻으로 사용돼요.",
+    "example_ko": "우리는 강가에 살아요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2394,7 +2394,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “그만큼”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 그렇게 많은 시간이 없어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2410,7 +2410,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “~하기 전에”이라는 뜻으로 사용돼요.",
+    "example_ko": "나가기 전에 전화해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2522,7 +2522,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “확실한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “pewny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -2586,7 +2586,7 @@
       "core-500",
       "num"
     ],
-    "example_ko": "이 문장에서는 “셋”이라는 뜻으로 사용돼요.",
+    "example_ko": "질문이 세 개 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -2618,7 +2618,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “~도 아니다”이라는 뜻으로 사용돼요.",
+    "example_ko": "시간도 돈도 없어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2650,7 +2650,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “왜냐하면”이라는 뜻으로 사용돼요.",
+    "example_ko": "몸이 안 좋아서 집에 있었어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2762,7 +2762,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “~까지”이라는 뜻으로 사용돼요.",
+    "example_ko": "당신이 일을 끝낼 때까지 기다렸어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2794,7 +2794,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “각각의”이라는 뜻으로 사용돼요.",
+    "example_ko": "매일매일이 달라요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -2842,7 +2842,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “늙은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “stary”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -2954,7 +2954,7 @@
       "core-500",
       "num"
     ],
-    "example_ko": "이 문장에서는 “첫 번째”이라는 뜻으로 사용돼요.",
+    "example_ko": "오늘은 제 첫 출근날이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -3002,7 +3002,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “만약”이라는 뜻으로 사용돼요.",
+    "example_ko": "비가 온다면 저는 집에 있을 거예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -3018,7 +3018,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “우리의”이라는 뜻으로 사용돼요.",
+    "example_ko": "이곳은 우리 방이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3146,7 +3146,7 @@
       "core-500",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “가끔했다”이라는 뜻으로 사용돼요.",
+    "example_ko": "시간이 더 많았으면 좋겠어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -3210,7 +3210,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “너머”이라는 뜻으로 사용돼요.",
+    "example_ko": "일 외에는 요리하는 것을 좋아해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3226,7 +3226,7 @@
       "core-500",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “아!”이라는 뜻으로 사용돼요.",
+    "example_ko": "아, 열쇠를 깜빡했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3242,7 +3242,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “기분좋은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “miły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "감정·생각"
@@ -3274,7 +3274,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “마치”이라는 뜻으로 사용돼요.",
+    "example_ko": "비가 올 것처럼 보여요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3290,7 +3290,7 @@
       "core-500",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “거의”이라는 뜻으로 사용돼요.",
+    "example_ko": "거의 다 끝냈어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3354,7 +3354,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “어느땐가”이라는 뜻으로 사용돼요.",
+    "example_ko": "제 열쇠가 이 근처 어딘가에 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3450,7 +3450,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “그럴지라도”이라는 뜻으로 사용돼요.",
+    "example_ko": "힘들었지만 우리는 해냈어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3466,7 +3466,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “다른 것”이라는 뜻으로 사용돼요.",
+    "example_ko": "다른 사이즈가 필요해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "사람·관계"
@@ -3514,7 +3514,7 @@
       "core-500",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “하지만”이라는 뜻으로 사용돼요.",
+    "example_ko": "우리 이미 그 얘기 했잖아요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3546,7 +3546,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “아니요”이라는 뜻으로 사용돼요.",
+    "example_ko": "지금은 어떤 버스도 운행하지 않아요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3626,7 +3626,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “만약”이라는 뜻으로 사용돼요.",
+    "example_ko": "원한다면 지금 시작할 수 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -3642,7 +3642,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “지”이라는 뜻으로 사용돼요.",
+    "example_ko": "여기 왔으니 시작해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3706,7 +3706,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “적절한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “właściwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -3754,7 +3754,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “새로운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “nowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -3802,7 +3802,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “엄격하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “poważny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -3818,7 +3818,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “의동안”이라는 뜻으로 사용돼요.",
+    "example_ko": "회의 중에는 휴대전화를 사용하지 마세요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -3994,7 +3994,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “작은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “mały”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -4058,7 +4058,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “끼리”이라는 뜻으로 사용돼요.",
+    "example_ko": "가게는 은행과 약국 사이에 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -4106,7 +4106,7 @@
       "core-500",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “자, 여기 있다”이라는 뜻으로 사용돼요.",
+    "example_ko": "여기 제 서류가 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -4122,7 +4122,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “하면서”이라는 뜻으로 사용돼요.",
+    "example_ko": "당신이 돌아올 때까지 기다릴게요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -4138,7 +4138,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “무엇”이라는 뜻으로 사용돼요.",
+    "example_ko": "하고 싶은 말을 아무거나 해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -4250,7 +4250,7 @@
       "core-500",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “하다 못해”이라는 뜻으로 사용돼요.",
+    "example_ko": "적어도 5분은 기다려 주세요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -4346,7 +4346,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “고귀한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “super”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -4378,7 +4378,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “어디에”이라는 뜻으로 사용돼요.",
+    "example_ko": "어디로 가요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -4426,7 +4426,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “있을 수 있는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “możliwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -4474,7 +4474,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “중요한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ważny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -4522,7 +4522,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “하였다”이라는 뜻으로 사용돼요.",
+    "example_ko": "비가 와서 우리는 집에 있었어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -4554,7 +4554,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “비싼”이라는 표현이 나와요.",
+    "example_ko": "본문에 “drogi”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -4666,7 +4666,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “겨루다”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 그 생각에 반대해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -4698,7 +4698,7 @@
       "core-500",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “오히려”이라는 뜻으로 사용돼요.",
+    "example_ko": "오늘은 그냥 집에 있을 것 같아요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -4730,7 +4730,7 @@
       "core-500",
       "num"
     ],
-    "example_ko": "이 문장에서는 “오”이라는 뜻으로 사용돼요.",
+    "example_ko": "5분 기다려 주세요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -4778,7 +4778,7 @@
       "core-500",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “도시”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 전혀 피곤하지 않아요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "이동·장소"
@@ -4858,7 +4858,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “즉”이라는 뜻으로 사용돼요.",
+    "example_ko": "18시에, 즉 저녁 6시에 만나요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -4874,7 +4874,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “이상한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dziwny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -4922,7 +4922,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “마지막”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ostatni”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -5130,7 +5130,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “점잖다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niezły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -5194,7 +5194,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “기쁜”이라는 표현이 나와요.",
+    "example_ko": "본문에 “rad”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -5242,7 +5242,7 @@
       "core-500",
       "num"
     ],
-    "example_ko": "이 문장에서는 “사”이라는 뜻으로 사용돼요.",
+    "example_ko": "의자가 네 개 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -5514,7 +5514,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “큰”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wielki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -5562,7 +5562,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “설렵”이라는 뜻으로 사용돼요.",
+    "example_ko": "피곤하지만 아직 일하고 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -5658,7 +5658,7 @@
       "core-500",
       "phrase"
     ],
-    "example_ko": "이 문장에서는 “안녕히 주무세요”이라는 뜻으로 사용돼요.",
+    "example_ko": "대화에 “dobranoc”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -5690,7 +5690,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “거룩하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wspaniały”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -5722,7 +5722,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “적게”이라는 뜻으로 사용돼요.",
+    "example_ko": "오늘은 시간이 별로 없어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -5834,7 +5834,7 @@
       "core-500",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “세상에!”이라는 뜻으로 사용돼요.",
+    "example_ko": "세상에, 여기 정말 춥네요!",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "사람·관계"
@@ -5866,7 +5866,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “그럭저럭”이라는 뜻으로 사용돼요.",
+    "example_ko": "어떻게든 해낼 거예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -5882,7 +5882,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “대로”이라는 뜻으로 사용돼요.",
+    "example_ko": "계획대로라면 5시에 끝나요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -5930,7 +5930,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “마치다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zupełny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -5962,7 +5962,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “괜찮다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “okej”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -5978,7 +5978,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “공동의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wspólny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -6010,7 +6010,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “가능성이 높은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “prawdopodobny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -6058,7 +6058,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “네”이라는 뜻으로 사용돼요.",
+    "example_ko": "이게 여러분의 차인가요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -6138,7 +6138,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “자빠지다”이라는 뜻으로 사용돼요.",
+    "example_ko": "우리는 한 시간 넘게 기다렸어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -6234,7 +6234,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “충분한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wystarczający”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -6298,7 +6298,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “곳곳”이라는 뜻으로 사용돼요.",
+    "example_ko": "그것을 모든 곳에서 찾아봤어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -6346,7 +6346,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “갑작스러운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “nagły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -6362,7 +6362,7 @@
       "core-500",
       "num"
     ],
-    "example_ko": "이 문장에서는 “순간”이라는 뜻으로 사용돼요.",
+    "example_ko": "두 번째 정류장이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -6378,7 +6378,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “설렵”이라는 뜻으로 사용돼요.",
+    "example_ko": "비가 오지만 우리는 산책하러 가요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -6522,7 +6522,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “유일한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “jedyny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -6618,7 +6618,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “전체의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “całkowity”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -6634,7 +6634,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “의 대신에”이라는 뜻으로 사용돼요.",
+    "example_ko": "오늘은 커피 대신 차를 마셔요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -6746,7 +6746,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “따라서”이라는 뜻으로 사용돼요.",
+    "example_ko": "모든 준비가 끝났으니 시작할 수 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -6762,7 +6762,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “아름다운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “piękny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -6778,7 +6778,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “와”이라는 뜻으로 사용돼요.",
+    "example_ko": "여권과 신청서가 필요해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -6826,7 +6826,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “불구하고”이라는 뜻으로 사용돼요.",
+    "example_ko": "비가 왔지만 우리는 산책하러 갔어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -6842,7 +6842,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “어리석은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “głupi”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -6874,7 +6874,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “곁에”이라는 뜻으로 사용돼요.",
+    "example_ko": "약국은 가게 옆에 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -6922,7 +6922,7 @@
       "core-500",
       "det"
     ],
-    "example_ko": "문장에는 “양”이라는 뜻의 단어가 사용돼요.",
+    "example_ko": "이 문장에서는 “oba”라는 단어를 사용했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -6954,7 +6954,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “어디서”이라는 뜻으로 사용돼요.",
+    "example_ko": "일을 시작한 뒤부터 여기서 살고 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -6970,7 +6970,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “우습다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zabawny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -7194,7 +7194,7 @@
       "core-500",
       "num"
     ],
-    "example_ko": "이 문장에서는 “여섯”이라는 뜻으로 사용돼요.",
+    "example_ko": "회의는 6시에 시작해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -7226,7 +7226,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “같을만큼”이라는 뜻으로 사용돼요.",
+    "example_ko": "겉보기에는 다 작동하지만 뭔가 이상해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -7242,7 +7242,7 @@
       "core-500",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “하면서”이라는 뜻으로 사용돼요.",
+    "example_ko": "시간이 있을 때 쉬어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -7290,7 +7290,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “진짜의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “prawdziwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -7354,7 +7354,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “무서운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “straszny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -7402,7 +7402,7 @@
       "core-500",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “근접하여”이라는 뜻으로 사용돼요.",
+    "example_ko": "6시쯤 그곳에 있을게요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -7450,7 +7450,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “다음의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “następny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -7530,7 +7530,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “솔직한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “szczery”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "사람·관계"
@@ -7578,7 +7578,7 @@
       "core-500",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “이리”이라는 뜻으로 사용돼요.",
+    "example_ko": "이쪽으로 가는 게 더 빨라요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -7626,7 +7626,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “연속적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “kolejny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -7738,7 +7738,7 @@
       "core-500",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “정말 ~인가?”이라는 뜻으로 사용돼요.",
+    "example_ko": "정말 아름답지 않나요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -7962,7 +7962,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “식히다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “fajny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -7978,7 +7978,7 @@
       "core-500",
       "adj"
     ],
-    "example_ko": "문장에는 “어려운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “trudny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -8058,7 +8058,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “고귀한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “świetny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -8170,7 +8170,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “젊은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “młody”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -8298,7 +8298,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “행복한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “szczęśliwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "감정·생각"
@@ -8410,7 +8410,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “요기있는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niesamowity”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -8474,7 +8474,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “큰”이라는 표현이 나와요.",
+    "example_ko": "본문에 “duży”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -8522,7 +8522,7 @@
       "core-1000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “누구도”이라는 뜻으로 사용돼요.",
+    "example_ko": "누가 했든 잘했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -8586,7 +8586,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “재미있다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ciekawy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -8602,7 +8602,7 @@
       "core-1000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “오”이라는 뜻으로 사용돼요.",
+    "example_ko": "아, 이제 이해했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -8762,7 +8762,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “자기 자신의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “własny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -8794,7 +8794,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “높다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wysoki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -8842,7 +8842,7 @@
       "core-1000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “끼리”이라는 뜻으로 사용돼요.",
+    "example_ko": "탁자가 창문들 사이에 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -8970,7 +8970,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “죽은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “martwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -9114,7 +9114,7 @@
       "core-1000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “대히트”이라는 뜻으로 사용돼요.",
+    "example_ko": "와, 정말 멋져 보여요!",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -9194,7 +9194,7 @@
       "core-1000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “예”이라는 뜻으로 사용돼요.",
+    "example_ko": "네, 동의해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -9306,7 +9306,7 @@
       "core-1000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “정말”이라는 뜻으로 사용돼요.",
+    "example_ko": "와, 정말 빨랐네요!",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -9514,7 +9514,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “개인의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “osobisty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -9610,7 +9610,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “웃긴”이라는 표현이 나와요.",
+    "example_ko": "본문에 “śmieszny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "감정·생각"
@@ -9674,7 +9674,7 @@
       "core-1000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “열”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 10분 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -9690,7 +9690,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “예쁜”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ładny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -9770,7 +9770,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “매일의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “codzienny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -9866,7 +9866,7 @@
       "core-1000",
       "particle"
     ],
-    "example_ko": "문장에는 “가끔했다”이라는 뜻의 단어가 사용돼요.",
+    "example_ko": "이 문장에서는 “byśmy”라는 단어를 사용했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -10010,7 +10010,7 @@
       "core-1000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “일곱”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 7시에 일어나고 버스도 7시에 타요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -10106,7 +10106,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “느린”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wolny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -10122,7 +10122,7 @@
       "core-1000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “상상상”이라는 뜻으로 사용돼요.",
+    "example_ko": "내일 비가 온다고 해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -10314,7 +10314,7 @@
       "core-1000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “앞”이라는 뜻으로 사용돼요.",
+    "example_ko": "변화에 대해 조심해야 해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -10330,7 +10330,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “지난”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zeszły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -10346,7 +10346,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “조심스러운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ostrożny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -10378,7 +10378,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “완벽하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “doskonały”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "집·일상"
@@ -10506,7 +10506,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “아픈”이라는 표현이 나와요.",
+    "example_ko": "본문에 “chory”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -10586,7 +10586,7 @@
       "core-1000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “에 둘러싸여”이라는 뜻으로 사용돼요.",
+    "example_ko": "사람들 사이가 아주 시끄러웠어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -10666,7 +10666,7 @@
       "core-1000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “이외”이라는 뜻으로 사용돼요.",
+    "example_ko": "커피 외에 물도 주세요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -10778,7 +10778,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “여러 가지의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “różny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -10826,7 +10826,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “조화되다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zgodny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -10986,7 +10986,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “옛날의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dawny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -11066,7 +11066,7 @@
       "core-1000",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “그”이라는 뜻으로 사용돼요.",
+    "example_ko": "그 결정이 최종적이라는 것은 알려져 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -11130,7 +11130,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “기꺼이 하는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “chętny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -11178,7 +11178,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “거만한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dumny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -11354,7 +11354,7 @@
       "core-1000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “여덟”이라는 뜻으로 사용돼요.",
+    "example_ko": "일은 8시에 시작해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -11434,7 +11434,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “필요한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “potrzebny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -11466,7 +11466,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “실제의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “rzeczywisty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -11498,7 +11498,7 @@
       "core-1000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “몇”이라는 뜻으로 사용돼요.",
+    "example_ko": "그것을 아는 사람은 많지 않아요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -11530,7 +11530,7 @@
       "core-1000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “그”이라는 뜻으로 사용돼요.",
+    "example_ko": "저 건물은 아주 오래됐어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -11546,7 +11546,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “안전한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “bezpieczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -11802,7 +11802,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “차가운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zimny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -12026,7 +12026,7 @@
       "core-1000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “마침”이라는 뜻으로 사용돼요.",
+    "example_ko": "마침 지금 잠깐 시간이 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -12170,7 +12170,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “긴”이라는 표현이 나와요.",
+    "example_ko": "본문에 “długi”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -12186,7 +12186,7 @@
       "core-1000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “그”이라는 뜻으로 사용돼요.",
+    "example_ko": "그 사람은 여기서 여러 해 동안 일했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -12202,7 +12202,7 @@
       "core-1000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “아마”이라는 뜻으로 사용돼요.",
+    "example_ko": "아마 나중에 돌아올 거예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -12218,7 +12218,7 @@
       "core-1000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “야아”이라는 뜻으로 사용돼요.",
+    "example_ko": "야, 나 좀 기다려!",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -12266,7 +12266,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “반한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “szalony”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -12346,7 +12346,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “절대적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “absolutny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -12362,7 +12362,7 @@
       "core-1000",
       "particle"
     ],
-    "example_ko": "문장에는 “다른 곳·때 (복합 부사 구성)”이라는 뜻의 단어가 사용돼요.",
+    "example_ko": "이 문장에서는 “indziej”라는 단어를 사용했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -12394,7 +12394,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “공복의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “głodny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -12538,7 +12538,7 @@
       "core-1000",
       "core"
     ],
-    "example_ko": "문장에는 “왼쪽”이라는 뜻의 단어가 사용돼요.",
+    "example_ko": "본문에 “lewo”라는 단어가 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "이동·장소"
@@ -12554,7 +12554,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “특별한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “szczególny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -12570,7 +12570,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “성스럽다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “boski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -12602,7 +12602,7 @@
       "core-1000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “음…”이라는 뜻으로 사용돼요.",
+    "example_ko": "흠, 생각 좀 해봐야겠어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -12634,7 +12634,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “끔찍한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “okropny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -13050,7 +13050,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “가득 찬”이라는 표현이 나와요.",
+    "example_ko": "본문에 “pełny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -13194,7 +13194,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “극동의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “daleki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -13226,7 +13226,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “당신의 (정중한, 남성에게)”이라는 표현이 나와요.",
+    "example_ko": "본문에 “Pański”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -13370,7 +13370,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “흰색”이라는 표현이 나와요.",
+    "example_ko": "본문에 “biały”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -13402,7 +13402,7 @@
       "core-1000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “백”이라는 뜻으로 사용돼요.",
+    "example_ko": "이것은 100즈워티예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -13434,7 +13434,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “대단하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “znaczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -13642,7 +13642,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “쉬운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “łatwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -13722,7 +13722,7 @@
       "core-1000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “나가!”이라는 뜻으로 사용돼요.",
+    "example_ko": "여기서 나가!",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -13818,7 +13818,7 @@
       "core-1000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “설마 ~인가?”이라는 뜻으로 사용돼요.",
+    "example_ko": "설마 이게 끝인가요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -14106,7 +14106,7 @@
       "core-1000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “철두철미”이라는 뜻으로 사용돼요.",
+    "example_ko": "우리는 실습을 통해 배워요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -14122,7 +14122,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “가까이로”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niedaleki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -14218,7 +14218,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “강한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “silny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -14314,7 +14314,7 @@
       "core-1000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “그렇지?”이라는 뜻으로 사용돼요.",
+    "example_ko": "날씨 좋죠, 그렇지 않나요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -14378,7 +14378,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “분명하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “oczywisty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -14410,7 +14410,7 @@
       "core-1000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “영점”이라는 뜻으로 사용돼요.",
+    "example_ko": "밖은 0도예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -14778,7 +14778,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “살벌하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “cholerny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -14874,7 +14874,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “마치다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “kompletny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -15050,7 +15050,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “정상적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “normalny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -15066,7 +15066,7 @@
       "core-1000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “대체 어디에”이라는 뜻으로 사용돼요.",
+    "example_ko": "당신이 원하는 곳이면 어디든 갈게요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -15098,7 +15098,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “비슷한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “podobny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -15146,7 +15146,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “무겁다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ciężki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -15178,7 +15178,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “감미롭다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “słodki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -15226,7 +15226,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “뜨거운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “gorący”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -15322,7 +15322,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “필요한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “konieczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -15450,7 +15450,7 @@
       "core-1000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “셋째”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 3층에 살고 있고, 이게 세 번째 건물이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -15482,7 +15482,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “부상한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ranny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -15546,7 +15546,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “맑다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “czysty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -15562,7 +15562,7 @@
       "core-1000",
       "adj"
     ],
-    "example_ko": "문장에는 “현재의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “obecny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -15962,7 +15962,7 @@
       "core-1000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “잘만 되면”이라는 뜻으로 사용돼요.",
+    "example_ko": "내일은 더 따뜻했으면 좋겠어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -16122,7 +16122,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “미래의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “przyszły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -16218,7 +16218,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “분별있는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “odpowiedzialny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -16394,7 +16394,7 @@
       "core-2000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “정말”이라는 뜻으로 사용돼요.",
+    "example_ko": "정말 무슨 말을 해야 할지 모르겠어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -16570,7 +16570,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “근대의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niedawny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -16938,7 +16938,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “가난한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “biedny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -17018,7 +17018,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “왼쪽의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “lewy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "이동·장소"
@@ -17130,7 +17130,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “적대적”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niedobry”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -17450,7 +17450,7 @@
       "core-2000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “젠장”이라는 뜻으로 사용돼요.",
+    "example_ko": "젠장, 또 깜빡했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -17530,7 +17530,7 @@
       "core-2000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “누구든”이라는 뜻으로 사용돼요.",
+    "example_ko": "버스가 곧 도착할 거예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -17594,7 +17594,7 @@
       "core-2000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “아하”이라는 뜻으로 사용돼요.",
+    "example_ko": "아하, 이제 모든 게 분명해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -17658,7 +17658,7 @@
       "core-2000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “아멘”이라는 뜻으로 사용돼요.",
+    "example_ko": "기도가 끝날 때 모두 아멘이라고 말했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -17706,7 +17706,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “문자 그대로의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dosłowny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "이동·장소"
@@ -17722,7 +17722,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “놀라운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “cudowny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "감정·생각"
@@ -17770,7 +17770,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “점잖다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “przystojny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -17786,7 +17786,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “주요한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “główny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -17882,7 +17882,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “오른쪽의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “prawy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "이동·장소"
@@ -17898,7 +17898,7 @@
       "core-2000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “불구하고”이라는 뜻으로 사용돼요.",
+    "example_ko": "문제가 있어도 모든 것이 작동해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -17994,7 +17994,7 @@
       "core-2000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “대충”이라는 뜻으로 사용돼요.",
+    "example_ko": "거의 모든 준비가 끝났어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -18058,7 +18058,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “앞에서의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “poprzedni”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -18090,7 +18090,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “특별한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “specjalny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -18202,7 +18202,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “실리적”이라는 표현이 나와요.",
+    "example_ko": "본문에 “praktyczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -18250,7 +18250,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “기혼”이라는 표현이 나와요.",
+    "example_ko": "본문에 “żonaty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -18394,7 +18394,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “고마운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wdzięczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -18410,7 +18410,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “공의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “oficjalny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -18426,7 +18426,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “현명한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “mądry”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -18442,7 +18442,7 @@
       "core-2000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “아홉”이라는 뜻으로 사용돼요.",
+    "example_ko": "사무실은 9시에 문을 열어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -18570,7 +18570,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “신성한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “święty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -18586,7 +18586,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “인간적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ludzki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -18602,7 +18602,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “전”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wszelki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -18618,7 +18618,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “변함없다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wieczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -19194,7 +19194,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “이상”이라는 표현이 나와요.",
+    "example_ko": "본문에 “idealny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -19354,7 +19354,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “약한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “słaby”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -19402,7 +19402,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “아쉬움”이라는 표현이 나와요.",
+    "example_ko": "본문에 “smutny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -19466,7 +19466,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “용의자”이라는 표현이 나와요.",
+    "example_ko": "본문에 “podejrzany”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "집·일상"
@@ -19610,7 +19610,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “배타적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wyłączny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -19626,7 +19626,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “신용할 수 있는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wiarygodny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -19642,7 +19642,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “고독한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “samotny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -19658,7 +19658,7 @@
       "core-2000",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “만일 이라면”이라는 뜻으로 사용돼요.",
+    "example_ko": "제시간에 도착하기만 한다면 뭐든 할게요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -19674,7 +19674,7 @@
       "core-2000",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “왜냐하면”이라는 뜻으로 사용돼요.",
+    "example_ko": "그는 아팠기 때문에 오지 않았어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -19706,7 +19706,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “거나한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wesoły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -19978,7 +19978,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “낮의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dzienny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -20074,7 +20074,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “주의깊은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “uważny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -20378,7 +20378,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “위독한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niebezpieczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -20394,7 +20394,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “희다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “fair”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -20458,7 +20458,7 @@
       "core-2000",
       "particle"
     ],
-    "example_ko": "문장에는 “가끔했다”이라는 뜻의 단어가 사용돼요.",
+    "example_ko": "이 문장에서는 “byście”라는 단어를 사용했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -20522,7 +20522,7 @@
       "core-2000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “더욱이”이라는 뜻으로 사용돼요.",
+    "example_ko": "어쨌든 직접 확인해 볼 수 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -20794,7 +20794,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “잘알지 못하는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “obcy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -20874,7 +20874,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “빠른”이라는 표현이 나와요.",
+    "example_ko": "본문에 “szybki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -20954,7 +20954,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “동시의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “jednoczesny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -21034,7 +21034,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “평범한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zwykły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -21114,7 +21114,7 @@
       "core-2000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “스물”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 20즈워티가 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -21178,7 +21178,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “살다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “żywy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -21370,7 +21370,7 @@
       "core-2000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “누구든”이라는 뜻으로 사용돼요.",
+    "example_ko": "이 열쇠들 중 하나는 맞을 거예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -21386,7 +21386,7 @@
       "core-2000",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “그럴지라도”이라는 뜻으로 사용돼요.",
+    "example_ko": "아이디어는 좋지만 비싸요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -21514,7 +21514,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “영어의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “angielski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -21578,7 +21578,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “가장 좋아하는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ulubiony”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "감정·생각"
@@ -21690,7 +21690,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “옳은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “słuszny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -21738,7 +21738,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “부러워하는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zazdrosny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -21802,7 +21802,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “결합한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zjednoczony”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -21914,7 +21914,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “특별한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niezwykły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -21978,7 +21978,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “가볍다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “lekki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -22202,7 +22202,7 @@
       "core-2000",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “설령”이라는 뜻으로 사용돼요.",
+    "example_ko": "한 번이라도 해보세요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -22218,7 +22218,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “기름지다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “bogaty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -22234,7 +22234,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “노령의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “starczy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -22266,7 +22266,7 @@
       "core-2000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “~에 반하여”이라는 뜻으로 사용돼요.",
+    "example_ko": "그는 제 충고를 거슬러 그렇게 했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -22618,7 +22618,7 @@
       "core-2000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “이하”이라는 뜻으로 사용돼요.",
+    "example_ko": "기온이 0도 아래로 떨어졌어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -22714,7 +22714,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “짧다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “krótki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -22810,7 +22810,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “근본의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ostateczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -22938,7 +22938,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “유능하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zdolny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -22986,7 +22986,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “파란색의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niebieski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -23146,7 +23146,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “두려운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ekstra”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -23162,7 +23162,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “감미롭다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “uroczy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -23194,7 +23194,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “막대하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ogromny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -23274,7 +23274,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “지배하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “bezpośredni”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -23514,7 +23514,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “궂다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “kiepski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -23738,7 +23738,7 @@
       "core-2000",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “마침”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 겨우 10분밖에 없어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -23770,7 +23770,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “비우다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “pusty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -23882,7 +23882,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “단단한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “twardy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -23898,7 +23898,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “마주보는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “przeciwny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -23914,7 +23914,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “비밀”이라는 표현이 나와요.",
+    "example_ko": "본문에 “tajny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -24042,7 +24042,7 @@
       "core-2000",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “그러면 ~일 텐데”이라는 뜻으로 사용돼요.",
+    "example_ko": "오늘은 이게 전부예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -24298,7 +24298,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “알맞다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “odpowiedni”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -24362,7 +24362,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “가짜의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “lichy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -24378,7 +24378,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “상호의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wzajemny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -24490,7 +24490,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “선물”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dzisiejszy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -24554,7 +24554,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “미완성의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niezupełny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -24570,7 +24570,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “특별한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wyjątkowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -24618,7 +24618,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “메스꺼운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “obrzydliwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -24842,7 +24842,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “어리석은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niedorzeczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -24890,7 +24890,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “눈먼”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ślepy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -25034,7 +25034,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “부가적”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dodatkowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -25194,7 +25194,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “건강한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zdrowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -25322,7 +25322,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “두려운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “mega”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -25370,7 +25370,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “신선하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “świeży”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -25594,7 +25594,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “귀천”이라는 표현이 나와요.",
+    "example_ko": "본문에 “delikatny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -25642,7 +25642,7 @@
       "core-2000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “~을 따라”이라는 뜻으로 사용돼요.",
+    "example_ko": "우리는 강을 따라 걸어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "이동·장소"
@@ -25738,7 +25738,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “가족”이라는 표현이 나와요.",
+    "example_ko": "본문에 “rodzinny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "사람·관계"
@@ -25802,7 +25802,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “계획적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “celowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -25898,7 +25898,7 @@
       "core-2000",
       "name"
     ],
-    "example_ko": "이 문장에서는 “인터넷”이라는 뜻으로 사용돼요.",
+    "example_ko": "본문에 “Internet”라는 명칭이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기술·미디어"
@@ -26106,7 +26106,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “독립당의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niezależny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -26218,7 +26218,7 @@
       "core-2000",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “둘 다 (zarówno A, jak i B)”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 커피도 차도 둘 다 좋아해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -26234,7 +26234,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “정오”이라는 표현이 나와요.",
+    "example_ko": "본문에 “południowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -26298,7 +26298,7 @@
       "core-2000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “미안”이라는 뜻으로 사용돼요.",
+    "example_ko": "미안해요, 늦었어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -26346,7 +26346,7 @@
       "core-2000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “에 둘러싸여”이라는 뜻으로 사용돼요.",
+    "example_ko": "그는 사람들 한가운데 서 있었어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -26426,7 +26426,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “가라앉히다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “spokojny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -26442,7 +26442,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “조그맣다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “drobny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -26474,7 +26474,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “초록색의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zielony”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -26522,7 +26522,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “가짜”이라는 표현이 나와요.",
+    "example_ko": "본문에 “fałszywy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -26538,7 +26538,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “불법”이라는 표현이 나와요.",
+    "example_ko": "본문에 “nielegalny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -26554,7 +26554,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “보이는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “widoczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -26682,7 +26682,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “분리하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “osobny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -27050,7 +27050,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “안락하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wygodny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -27178,7 +27178,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “선서한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “przysięgły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -27226,7 +27226,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “강건한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “mocny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -27338,7 +27338,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “끝내주는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zajebisty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -27498,7 +27498,7 @@
       "core-2000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “상상상”이라는 뜻으로 사용돼요.",
+    "example_ko": "새 가게를 연다고 하네요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -27562,7 +27562,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “민간”이라는 표현이 나와요.",
+    "example_ko": "본문에 “prywatny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -27674,7 +27674,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “공정하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “sprawiedliwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -27738,7 +27738,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “재미없다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “nudny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -27914,7 +27914,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “슬프다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “żałosny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "감정·생각"
@@ -27994,7 +27994,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “북에있는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “północny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -28186,7 +28186,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “과하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zbytni”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -28426,7 +28426,7 @@
       "core-2000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “쾅!”이라는 뜻으로 사용돼요.",
+    "example_ko": "갑자기 쾅 하는 소리가 들렸어요!",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -28490,7 +28490,7 @@
       "core-2000",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “인 까닭에”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 커피를 더 좋아하고, 그는 차를 더 좋아해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -28554,7 +28554,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “벌거벗은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “nagi”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -28570,7 +28570,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “걸쭉하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “gruby”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -28650,7 +28650,7 @@
       "core-2000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “누구든”이라는 뜻으로 사용돼요.",
+    "example_ko": "아무 색이나 고르세요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -28794,7 +28794,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “날카롭다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ostry”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -29370,7 +29370,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “곱다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “śliczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -29418,7 +29418,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “깊다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “głęboki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -29466,7 +29466,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “미합중국의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “amerykański”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -29546,7 +29546,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “절박하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “pilny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -29738,7 +29738,7 @@
       "core-2000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “그제서야”이라는 뜻으로 사용돼요.",
+    "example_ko": "그 당시에는 모든 것이 더 단순했어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -29802,7 +29802,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “불필요한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niekonieczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -30234,7 +30234,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “여분의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niepotrzebny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -30650,7 +30650,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “무작위”이라는 표현이 나와요.",
+    "example_ko": "본문에 “przypadkowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -30858,7 +30858,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “번쩍번쩍하는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “genialny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -30970,7 +30970,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “구성자”이라는 표현이 나와요.",
+    "example_ko": "본문에 “były”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -31034,7 +31034,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “영리한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “bystry”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -31082,7 +31082,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “더럽다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “brudny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -31114,7 +31114,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “자연의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “naturalny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -31130,7 +31130,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “맛있다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “pyszny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "음식·쇼핑"
@@ -31466,7 +31466,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “글로벌”이라는 표현이 나와요.",
+    "example_ko": "본문에 “światowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -31498,7 +31498,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “가사의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “domowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -31530,7 +31530,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “매체”이라는 표현이 나와요.",
+    "example_ko": "본문에 “średni”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -31578,7 +31578,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “기분좋은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “grzeczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "감정·생각"
@@ -31594,7 +31594,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “힘차다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “potężny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -31610,7 +31610,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “일정하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “stały”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -31946,7 +31946,7 @@
       "core-2000",
       "adj"
     ],
-    "example_ko": "문장에는 “괜찮은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “porządny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -32186,7 +32186,7 @@
       "core-3000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “누구의”이라는 뜻으로 사용돼요.",
+    "example_ko": "이 전화기는 누구 거예요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -32202,7 +32202,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “이중”이라는 표현이 나와요.",
+    "example_ko": "본문에 “podwójny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -32234,7 +32234,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “넷째”이라는 뜻으로 사용돼요.",
+    "example_ko": "프로젝트의 네 번째 날이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -32298,7 +32298,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “늦은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “późny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -32506,7 +32506,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “뱀의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “węży”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -32538,7 +32538,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “용감한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “odważny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -32746,7 +32746,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “고통스럽게”이라는 표현이 나와요.",
+    "example_ko": "본문에 “bolesny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -32906,7 +32906,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “가깝다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “bliski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -32986,7 +32986,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “금발”이라는 표현이 나와요.",
+    "example_ko": "본문에 “złoty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -33050,7 +33050,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “로맨틱한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “romantyczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33098,7 +33098,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “성적”이라는 표현이 나와요.",
+    "example_ko": "본문에 “seksualny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33178,7 +33178,7 @@
       "core-3000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “어떻다”이라는 뜻으로 사용돼요.",
+    "example_ko": "이 풍경이 얼마나 아름다운지!",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -33194,7 +33194,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “서른 번째”이라는 뜻으로 사용돼요.",
+    "example_ko": "오늘은 이번 달의 서른 번째 날이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -33290,7 +33290,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “유명한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “sławny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33354,7 +33354,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “배신하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dwukrotny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33402,7 +33402,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “엄격한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ścisły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33466,7 +33466,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “폴란드의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “polski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33482,7 +33482,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “기묘한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “fantastyczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33498,7 +33498,7 @@
       "core-3000",
       "conj"
     ],
-    "example_ko": "이 문장에서는 “인 까닭에”이라는 뜻으로 사용돼요.",
+    "example_ko": "오늘은 일하고, 내일은 쉬어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -33690,7 +33690,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “개업의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “medyczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33770,7 +33770,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “해저”이라는 표현이 나와요.",
+    "example_ko": "본문에 “denny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33802,7 +33802,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “적갈색의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “rudy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -33866,7 +33866,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “기룸있는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “królewski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33930,7 +33930,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “흥분한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “podekscytowany”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -33962,7 +33962,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “법적”이라는 표현이 나와요.",
+    "example_ko": "본문에 “legalny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -33978,7 +33978,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “가무는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “suchy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -34042,7 +34042,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “거룩한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wielebny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -34090,7 +34090,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “기술적”이라는 표현이 나와요.",
+    "example_ko": "본문에 “techniczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기술·미디어"
@@ -34122,7 +34122,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “살벌하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “pieprzony”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -34250,7 +34250,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “모험적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ryzykowny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -34410,7 +34410,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “팔다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “kurewski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -34506,7 +34506,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “버릇없는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niegrzeczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -34554,7 +34554,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “형편없는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “marny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -34586,7 +34586,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “주요한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “istotny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -34666,7 +34666,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “물질적”이라는 표현이 나와요.",
+    "example_ko": "본문에 “fizyczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -34682,7 +34682,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “누계”이라는 표현이 나와요.",
+    "example_ko": "본문에 “łączny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -34890,7 +34890,7 @@
       "core-3000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “아뿔싸”이라는 뜻으로 사용돼요.",
+    "example_ko": "어머, 무슨 일이 있었어요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -34906,7 +34906,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “마법의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “magiczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -35018,7 +35018,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “다섯째”이라는 뜻으로 사용돼요.",
+    "example_ko": "이번이 다섯 번째예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -35034,7 +35034,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “농염하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “sexy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -35194,7 +35194,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “기분 좋은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “przyjemny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "감정·생각"
@@ -35274,7 +35274,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “무급의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “darmowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -35338,7 +35338,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “반목”이라는 표현이 나와요.",
+    "example_ko": "본문에 “lenny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -35402,7 +35402,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “고귀한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “znakomity”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -35546,7 +35546,7 @@
       "core-3000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “충격”이라는 뜻으로 사용돼요.",
+    "example_ko": "세상에, 여기 사람이 정말 많네요!",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -35642,7 +35642,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “교묘하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “sprytny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -35930,7 +35930,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “따뜻한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ciepły”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -36010,7 +36010,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “어두운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ciemny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -36186,7 +36186,7 @@
       "core-3000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “뒤에서”이라는 뜻으로 사용돼요.",
+    "example_ko": "차가 모퉁이 뒤에서 나왔어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -36266,7 +36266,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “고상한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “smaczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -36346,7 +36346,7 @@
       "core-3000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “안녕하세요”이라는 뜻으로 사용돼요.",
+    "example_ko": "안녕, 잘 지내?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -36378,7 +36378,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “연방의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “federalny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "집·일상"
@@ -36442,7 +36442,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “솔직하지 않은”이라는 표현이 나와요.",
+    "example_ko": "본문에 “tajemniczy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -36650,7 +36650,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “참되다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “uczciwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -36746,7 +36746,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “개약의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wstecz”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -36970,7 +36970,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “조용한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “cichy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -37002,7 +37002,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “엄청나다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dziki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -37162,7 +37162,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “농염하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “seksowny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -37178,7 +37178,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “간결한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “nerwowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -37274,7 +37274,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “12배”이라는 뜻으로 사용돼요.",
+    "example_ko": "12시에 만나요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -37338,7 +37338,7 @@
       "core-3000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “이외”이라는 뜻으로 사용돼요.",
+    "example_ko": "그 사람 말고는 거기에 아무도 없었어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -37354,7 +37354,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “일년초”이라는 표현이 나와요.",
+    "example_ko": "본문에 “roczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -37466,7 +37466,7 @@
       "core-3000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “됐어!”이라는 뜻으로 사용돼요.",
+    "example_ko": "이 돈을 지불하면 우리 사이에는 빚이 없는 거예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -37482,7 +37482,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “열다섯”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 15분 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -37770,7 +37770,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “하나 반”이라는 뜻으로 사용돼요.",
+    "example_ko": "저는 한 시간 반을 기다렸어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -37786,7 +37786,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “유방”이라는 표현이 나와요.",
+    "example_ko": "본문에 “piersiowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "집·일상"
@@ -37978,7 +37978,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “보통의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “typowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -38090,7 +38090,7 @@
       "core-3000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “위”이라는 뜻으로 사용돼요.",
+    "example_ko": "우리는 10층보다 위에 살아요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -38202,7 +38202,7 @@
       "core-3000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “마주보는”이라는 뜻으로 사용돼요.",
+    "example_ko": "카페는 역 맞은편에 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -38282,7 +38282,7 @@
       "core-3000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “아울러”이라는 뜻으로 사용돼요.",
+    "example_ko": "게다가 서류가 하나 더 필요해요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "감정·생각"
@@ -38490,7 +38490,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “군용의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wojskowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -38618,7 +38618,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “여섯째”이라는 뜻으로 사용돼요.",
+    "example_ko": "여섯 번째 장이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -38634,7 +38634,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “식히다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “cool”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -38650,7 +38650,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “포함되는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zrozumiały”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -38682,7 +38682,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “일반적”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ogólny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -38746,7 +38746,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “프랑스어”이라는 표현이 나와요.",
+    "example_ko": "본문에 “francuski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -38778,7 +38778,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “내적”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wewnętrzny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -38826,7 +38826,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “개구음의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “szeroki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -38842,7 +38842,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “든든하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “uparty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -38858,7 +38858,7 @@
       "core-3000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “응?”이라는 뜻으로 사용돼요.",
+    "example_ko": "응? 뭐라고 했어요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -39050,7 +39050,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “키우다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “tylny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -39258,7 +39258,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “두려운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “konkretny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -39386,7 +39386,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “감정적”이라는 표현이 나와요.",
+    "example_ko": "본문에 “emocjonalny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "감정·생각"
@@ -39402,7 +39402,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “납작하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -39498,7 +39498,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “공손한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “uprzejmy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -39610,7 +39610,7 @@
       "core-3000",
       "particle"
     ],
-    "example_ko": "이 문장에서는 “네”이라는 뜻으로 사용돼요.",
+    "example_ko": "그래, 내일 두고 보자.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -39850,7 +39850,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “없어진”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zaginiony”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -39962,7 +39962,7 @@
       "core-3000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “어”이라는 뜻으로 사용돼요.",
+    "example_ko": "세상에, 정말 아름답네요!",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -40074,7 +40074,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “국가의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “narodowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "사회·행정"
@@ -40170,7 +40170,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “치사적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “śmiertelny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -40314,7 +40314,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “민감한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wrażliwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -40330,7 +40330,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “공론의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “teoretyczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -40442,7 +40442,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “제8의”이라는 뜻으로 사용돼요.",
+    "example_ko": "여덟 번째 정류장이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -40666,7 +40666,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “발림말하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “miodowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -40682,7 +40682,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “일부의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “częściowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -40730,7 +40730,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “공중의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “publiczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -40874,7 +40874,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “의식이 없는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “nieprzytomny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -40890,7 +40890,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “마주보는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “odwrotny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -41002,7 +41002,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “자유로운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “swobodny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -41098,7 +41098,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “슬기롭다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “inteligentny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -41178,7 +41178,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “모질다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “okrutny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -41194,7 +41194,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “손의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “ręczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -41258,7 +41258,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “흐름”이라는 표현이 나와요.",
+    "example_ko": "본문에 “bieżący”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -41354,7 +41354,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “오십”이라는 뜻으로 사용돼요.",
+    "example_ko": "이것은 50즈워티예요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -41546,7 +41546,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “귀머거리의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “głuchy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "이동·장소"
@@ -41946,7 +41946,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “사회적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “społeczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "사회·행정"
@@ -42074,7 +42074,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “규칙적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “regularny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -42106,7 +42106,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “노란색의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “żółty”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -42138,7 +42138,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “귀중한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “cenny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -42394,7 +42394,7 @@
       "core-3000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “어느 길로”이라는 뜻으로 사용돼요.",
+    "example_ko": "역에는 어느 길로 가야 해요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "이동·장소"
@@ -42442,7 +42442,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “질서있는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “kosmiczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -42474,7 +42474,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “서투른”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niezręczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -42522,7 +42522,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “다중”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wielokrotny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -42538,7 +42538,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “정신의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “psychiczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -42570,7 +42570,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “금융”이라는 표현이 나와요.",
+    "example_ko": "본문에 “finansowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -42602,7 +42602,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “꽃의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “kwietny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -42810,7 +42810,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “지각이 있는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “świadomy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -42874,7 +42874,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “인위”이라는 표현이 나와요.",
+    "example_ko": "본문에 “sztuczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -42890,7 +42890,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “시사문제의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “aktualny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -42906,7 +42906,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “자동차”이라는 표현이 나와요.",
+    "example_ko": "본문에 “samochodowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "이동·장소"
@@ -43114,7 +43114,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “맞다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “prawidłowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -43162,7 +43162,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “불행하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “nieszczęśliwy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -43226,7 +43226,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “어제의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wczorajszy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -43274,7 +43274,7 @@
       "core-3000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “~중에서”이라는 뜻으로 사용돼요.",
+    "example_ko": "이 모델들 중 하나를 고르세요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -43386,7 +43386,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “주간의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “tygodniowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -44074,7 +44074,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “대중의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “popularny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -44106,7 +44106,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “금발의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “blond”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -44234,7 +44234,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “늠름하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “męski”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -44314,7 +44314,7 @@
       "core-3000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “가운데”이라는 뜻으로 사용돼요.",
+    "example_ko": "탁자가 방 한가운데 있어요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -44362,7 +44362,7 @@
       "core-3000",
       "pron"
     ],
-    "example_ko": "이 문장에서는 “누군가의”이라는 뜻으로 사용돼요.",
+    "example_ko": "아마 누군가의 코트인 것 같아요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -44378,7 +44378,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “무익한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “bezużyteczny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -44650,7 +44650,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “매끄러운”이라는 표현이 나와요.",
+    "example_ko": "본문에 “gładki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -44714,7 +44714,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “못생기다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “brzydki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -44778,7 +44778,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “일곱째의”이라는 뜻으로 사용돼요.",
+    "example_ko": "일주일의 일곱 번째 날이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -44810,7 +44810,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “야간에 활동하는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “nocny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -44906,7 +44906,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “용감한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dzielny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -44970,7 +44970,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “강경하다”이라는 표현이 나와요.",
+    "example_ko": "본문에 “stabilny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "자연·환경"
@@ -44986,7 +44986,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “도움이 되는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “pomocny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -45130,7 +45130,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “모레의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “pojutrzejszy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -45370,7 +45370,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “수사의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “śledczy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -45450,7 +45450,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “연속적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “seryjny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -45514,7 +45514,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “고굉지신”이라는 표현이 나와요.",
+    "example_ko": "본문에 “lojalny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -45626,7 +45626,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “관계없는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “obojętny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "사람·관계"
@@ -45658,7 +45658,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “필수적인”이라는 표현이 나와요.",
+    "example_ko": "본문에 “niezbędny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -45706,7 +45706,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “서쪽”이라는 표현이 나와요.",
+    "example_ko": "본문에 “zachodni”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -45722,7 +45722,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “가망없는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “beznadziejny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -45946,7 +45946,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “꼼꼼한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dokładny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -46202,7 +46202,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “독립당의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “samodzielny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -46298,7 +46298,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “주장된”이라는 표현이 나와요.",
+    "example_ko": "본문에 “rzekomy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -46650,7 +46650,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “귀한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “rzadki”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "건강·몸"
@@ -46778,7 +46778,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “무용의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wojenny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -46794,7 +46794,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “관심을 끄는”이라는 표현이 나와요.",
+    "example_ko": "본문에 “atrakcyjny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -46890,7 +46890,7 @@
       "core-3000",
       "prep"
     ],
-    "example_ko": "이 문장에서는 “대로”이라는 뜻으로 사용돼요.",
+    "example_ko": "계약에 따르면 지불일은 내일이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"
@@ -47098,7 +47098,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “근본의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “podstawowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -47242,7 +47242,7 @@
       "core-3000",
       "num"
     ],
-    "example_ko": "이 문장에서는 “40번째”이라는 뜻으로 사용돼요.",
+    "example_ko": "목록에서 40번이에요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "시간·수량"
@@ -47450,7 +47450,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “동쪽의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “wschodni”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -47546,7 +47546,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “인생의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “życiowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -47562,7 +47562,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “원래의”이라는 표현이 나와요.",
+    "example_ko": "본문에 “oryginalny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -47626,7 +47626,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “이용 가능한”이라는 표현이 나와요.",
+    "example_ko": "본문에 “dostępny”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -47770,7 +47770,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “마른”이라는 표현이 나와요.",
+    "example_ko": "본문에 “chudy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -47898,7 +47898,7 @@
       "core-3000",
       "adj"
     ],
-    "example_ko": "문장에는 “갈색”이라는 표현이 나와요.",
+    "example_ko": "본문에 “brązowy”라는 표현이 나와요.",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "행동·상태"
@@ -47994,7 +47994,7 @@
       "core-3000",
       "intj"
     ],
-    "example_ko": "이 문장에서는 “멈춰!”이라는 뜻으로 사용돼요.",
+    "example_ko": "어이, 어디를 그렇게 빨리 가요?",
     "accepted_answers": [],
     "accepted_meanings": [],
     "domain": "기본 표현"

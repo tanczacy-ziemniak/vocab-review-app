@@ -17,6 +17,20 @@ const CORE_DOMAIN_ORDER = [
   '건강·몸', '감정·생각', '여가·문화', '시간·수량', '사회·행정', '자연·환경', '행동·상태', '사물·기타',
 ]
 const coreEntryMap = new Map(core3000.map((entry) => [normalizeWord(entry.word), entry]))
+const LEGACY_EXAMPLE_KO_MARKERS = ['뜻으로 사용돼요', '뜻의 단어가 사용돼요', '원본 빈도 자료에는', '문장에는 “']
+const isLegacyExampleKo = (value = '') => LEGACY_EXAMPLE_KO_MARKERS.some((marker) => String(value).includes(marker))
+const enrichCoreWord = (word) => {
+  if (!(word?.tags || []).includes('core3000')) return word
+  const entry = coreEntryMap.get(normalizeWord(word?.word || ''))
+  if (!entry) return word
+
+  const shouldRefreshKorean = !String(word.example_ko || '').trim() || isLegacyExampleKo(word.example_ko)
+  return {
+    ...word,
+    example: String(word.example || '').trim() ? word.example : (entry.example || ''),
+    example_ko: shouldRefreshKorean ? (entry.example_ko || '') : word.example_ko,
+  }
+}
 
 const readLocal = (key) => {
   try { return JSON.parse(localStorage.getItem(key) || '[]') } catch { return [] }
@@ -83,7 +97,8 @@ function App() {
       const now = new Date().toISOString()
       const localWords = readLocal(LOCAL_WORDS).map((word) => {
         const isLockedCore = (word.tags || []).includes('core3000') && Number(word.review_count || 0) === 0 && new Date(word.next_review_at || 0) > new Date()
-        return isLockedCore ? { ...word, next_review_at: now } : word
+        const unlocked = isLockedCore ? { ...word, next_review_at: now } : word
+        return enrichCoreWord(unlocked)
       })
       const localReviews = readLocal(LOCAL_REVIEWS)
       setWords(sortWords(localWords))
@@ -151,7 +166,7 @@ function App() {
       if (wordError) throw wordError
       if (prefError) throw prefError
 
-      const unlockedWords = await unlockFutureCoreRows(wordRows || [])
+      const unlockedWords = (await unlockFutureCoreRows(wordRows || [])).map(enrichCoreWord)
       let nextPrefs = prefs
       if (!nextPrefs) {
         const seedXp = unlockedWords.reduce((sum, word) => sum + Number(word.review_count || 0) * 8, 0)
